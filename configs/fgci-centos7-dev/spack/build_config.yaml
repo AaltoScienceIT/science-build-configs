@@ -122,9 +122,12 @@ packages:
   - name: 'openmpi'
     version: 3.1.4
   - name: 'magma'
-    version: 2.5.1
-  - name: 'magma'
     version: 2.5.3
+    dependencies:
+      - '%gcc@6.5.0'
+      - '^cmake%gcc@9.2.0'
+      - '^cuda%gcc@9.2.0'
+      - '^openblas%gcc@9.2.0'
   - name: 'python'
     version: 3.7.4
   - name: 'r'
