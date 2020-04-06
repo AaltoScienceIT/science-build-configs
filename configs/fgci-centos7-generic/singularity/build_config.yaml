@@ -56,7 +56,7 @@ flag_collections:
   modules:
     - '-B /share:/share'
   openpose:
-    - '--pwd /opt/openpose-master'
+    - '--pwd /opt/openpose'
 definitions:
   - name: 'stylegan2'
     docker_user: 'tensorflow'
@@ -188,3 +188,15 @@ definitions:
       - 'common'
     flag_collections:
       - 'common'
+  - name: 'singularity-openpose'
+    docker_user: 'aaltoscienceit'
+    docker_image: 'openpose'
+    registry: 'registry.cs.aalto.fi'
+    module_namespace: 'common'
+    tags:
+      - 'v1.5.1'
+    command_collections:
+      - 'common'
+    flag_collections:
+      - 'common'
+      - 'openpose'
