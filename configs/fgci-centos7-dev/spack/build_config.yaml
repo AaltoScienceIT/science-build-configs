@@ -108,6 +108,8 @@ packages:
   - name: 'openmpi'
     version: 3.1.4
   - name: 'magma'
+    version: 2.5.1
+  - name: 'magma'
     version: 2.5.3
   - name: 'python'
     version: 3.7.4
