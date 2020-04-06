@@ -66,6 +66,7 @@ collections:
       - bash-kernel
       - jupyterlab-git
       - matlab-kernel
+      - nbscript
       - nbzip
       - opencv-contrib-python
       - pymanopt
