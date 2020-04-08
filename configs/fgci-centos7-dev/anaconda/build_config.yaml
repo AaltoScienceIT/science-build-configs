@@ -67,11 +67,13 @@ collections:
       - jupyterlab-git
       - matlab-kernel
       - nbscript
+      - nbval
       - nbzip
       - opencv-contrib-python
       - pymanopt
       - python-igraph
       - roboschool
+
     conda_packages:
       - anaconda
       - anaconda-client
