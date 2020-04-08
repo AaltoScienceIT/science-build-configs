@@ -152,7 +152,6 @@ packages:
       - '+mpi'
       - '+papi'
       - '+pdt'
-      - '+shmem'
   - name: 'texlive'
     version: 'live'
   - name: 'upcxx'
