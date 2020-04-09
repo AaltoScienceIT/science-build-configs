@@ -102,6 +102,7 @@ collections:
       - jupyterlab-git
       - matlab-kernel
       - nbscript
+      - nbval
       - nbzip
       - opencv-contrib-python
       - pymanopt

@@ -73,7 +73,6 @@ collections:
       - pymanopt
       - python-igraph
       - roboschool
-
     conda_packages:
       - anaconda
       - anaconda-client
