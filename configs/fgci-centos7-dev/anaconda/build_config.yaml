@@ -2,6 +2,7 @@ installer_checksums:
   Miniconda3-latest-Linux-x86_64.sh: 'bfe34e1fa28d6d75a7ad05fd02fa5472275673d5f5621b77380898dee1be15d2'
   Miniconda3-4.7.12.1-Linux-x86_64.sh: 'bfe34e1fa28d6d75a7ad05fd02fa5472275673d5f5621b77380898dee1be15d2'
   Anaconda3-2019.10-Linux-x86_64.sh: '46d762284d252e51cd58a8ca6c8adc9da2eadc82c342927b2f66ed011d1d8b53'
+  Anaconda3-2020.02-Linux-x86_64.sh: '2b9f088b2022edb474915d9f69a803d6449d5fdb4c303041f60ac4aefcc208bb'
 environments:
   - name: miniconda
     version: '4.7.12.1'
@@ -46,6 +47,25 @@ environments:
     collections:
       - tensorflow-v2
       - triton-generic
+  - name: anaconda
+    version: '2020-03-tf2'
+    miniconda: False
+    python_version: 3
+    installer_version: '2020.02'
+    condarc:
+      channels:
+        - defaults
+        - pytorch
+        - gurobi
+        - IBMDecisionOptimization
+        - anaconda
+        - mosek
+        - conda-forge
+    collections:
+      - tensorflow-v2
+      - triton-generic
+collections:
+  tensorflow-v1:
 collections:
   tensorflow-v1:
     conda_packages:
@@ -57,7 +77,7 @@ collections:
   tensorflow-v2:
     conda_packages:
       - tensorboard
-      - tensorflow=2.0.0
+      - tensorflow=2.1.0
       - tensorflow-base
       - tensorflow-estimator
       - tensorflow-gpu
@@ -73,7 +93,6 @@ collections:
       - pymanopt
       - python-igraph
       - roboschool
-
     conda_packages:
       - anaconda
       - anaconda-client
