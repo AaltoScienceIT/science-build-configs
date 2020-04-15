@@ -113,6 +113,8 @@ packages:
       - '+metis'
   - name: 'openmpi'
     version: 3.1.4
+  - name: 'openmpi'
+    version: 1.6.5
   - name: 'magma'
     version: 2.5.3
     dependencies:
