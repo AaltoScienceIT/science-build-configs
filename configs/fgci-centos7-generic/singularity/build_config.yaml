@@ -196,4 +196,5 @@ definitions:
       - 'common'
     flag_collections:
       - 'common'
+      - 'nvidia'
       - 'openpose'
