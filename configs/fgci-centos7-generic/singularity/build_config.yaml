@@ -53,7 +53,7 @@ flag_collections:
   modules:
     - '-B /share:/share'
   openpose:
-    - '--workdir /opt/openpose'
+    - '--pwd /opt/openpose'
 definitions:
   - name: 'stylegan2'
     docker_user: 'tensorflow'
