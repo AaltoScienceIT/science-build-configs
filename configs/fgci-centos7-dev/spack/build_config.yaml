@@ -132,6 +132,8 @@ packages:
       - '^openblas%gcc@9.2.0'
   - name: 'python'
     version: 3.7.4
+  - name: 'py-virtualenv'
+    version: 16.4.1
   - name: 'r'
     version: 3.6.1
   - name: 'r-irkernel'
