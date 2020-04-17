@@ -72,6 +72,9 @@ modules:
           G4VERSION: '${VERSION}'
           G4INCLUDE: '${PREFIX}/include/Geant4'
           G4LIB: '${PREFIX}/lib64/Geant4'
+    intel-parallel-studio:
+      suffixes:
+        '+mpi'           : 'intelmpi'
     gcc:
       environment:
         prepend_path:
