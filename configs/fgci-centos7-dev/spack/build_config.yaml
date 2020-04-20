@@ -42,6 +42,8 @@ compilers:
     version: 'cluster.2019.3'
     licenses:
       - 'license.lic'
+    variants:
+      - '+mpi'
     dependencies:
       - '%gcc@9.2.0'
     flags:
@@ -56,6 +58,8 @@ compilers:
     version: 'cluster.2020.0'
     licenses:
       - 'license.lic'
+    variants:
+      - '+mpi'
     dependencies:
       - '%gcc@9.2.0'
     flags:
