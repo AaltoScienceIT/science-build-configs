@@ -173,3 +173,7 @@ packages:
       - '~mpi'
     licenses:
       - 'license.lic'
+    target_architecture:
+      platform: linux
+      os: centos7
+      arch: x86_64
