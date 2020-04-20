@@ -83,3 +83,5 @@ modules:
       environment:
         set:
           SLURM_MPI_TYPE: 'pmi2'
+      suffixes:
+        '+mpi'           : 'intelmpi'
