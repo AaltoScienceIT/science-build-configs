@@ -54,8 +54,6 @@ compilers:
       arch: x86_64
   - name: 'intel-parallel-studio'
     version: 'cluster.2020.0'
-    variants:
-      - '~mpi'
     licenses:
       - 'license.lic'
     dependencies:
@@ -171,3 +169,7 @@ packages:
       - '+nvptx'
   - name: 'intel-parallel-studio'
     version: 'cluster.2020.0'
+    variants:
+      - '~mpi'
+    licenses:
+      - 'license.lic'
