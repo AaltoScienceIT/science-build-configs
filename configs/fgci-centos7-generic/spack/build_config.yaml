@@ -42,6 +42,8 @@ compilers:
     version: 'cluster.2019.3'
     licenses:
       - 'license.lic'
+    variants:
+      - '+mpi'
     dependencies:
       - '%gcc@9.2.0'
     flags:
@@ -56,6 +58,8 @@ compilers:
     version: 'cluster.2020.0'
     licenses:
       - 'license.lic'
+    variants:
+      - '+mpi'
     dependencies:
       - '%gcc@9.2.0'
     flags:
@@ -151,3 +155,13 @@ packages:
     variants:
       - '+piclibs'
       - '+nvptx'
+  - name: 'intel-parallel-studio'
+    version: 'cluster.2020.0'
+    variants:
+      - '~mpi'
+    licenses:
+      - 'license.lic'
+    target_architecture:
+      platform: linux
+      os: centos7
+      arch: x86_64
