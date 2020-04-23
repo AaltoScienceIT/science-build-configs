@@ -37,6 +37,16 @@ command_collections:
       - 'apt-get update'
       - 'apt-get -y install -q build-essential g++'
       - 'rm -rf /var/lib/apt/lists/*'
+  dpabi:
+    post_commands:
+      - "echo '#!/bin/bash' > /usr/local/bin/DPABI"
+      - "echo '/opt/DPABI/DPABI_StandAlone/run_DPABI_StandAlone.sh /opt/mcr/v98' >> /usr/local/bin/DPABI"
+      - "chmod +x /usr/local/bin/DPABI"
+      - "/usr/local/bin/DPABI extra_argument || echo 'Ran DPABI to unpack ctf'"
+      - "echo '#!/bin/bash' > /usr/local/bin/DPABISurf"
+      - "echo '/opt/DPABI/DPABI_StandAlone/run_DPABISurf_run_StandAlone.sh /opt/mcr/v98 \"$@\"' >> /usr/local/bin/DPABISurf"
+      - "chmod +x /usr/local/bin/DPABISurf"
+      - "/usr/local/bin/DPABISurf missing_file.m || echo 'Ran DPABISurf to unpack ctf'"
 flag_collections:
   common:
     - '-B /m:/m'
@@ -54,6 +64,8 @@ flag_collections:
     - '-B /share:/share'
   openpose:
     - '--workdir /opt/openpose'
+  dpabi:
+    - '-B /share/apps/licenses/freesurfer/6.0.0/license.txt:/opt/freesurfer/license.txt'
 definitions:
 #  - name: 'nvidia-tensorflow'
 #    docker_user: 'nvidia'
@@ -141,3 +153,15 @@ definitions:
       - 'common'
     flag_collections:
       - 'common'
+  - name: 'singularity-dpabi'
+    docker_user: 'cgyan'
+    docker_image: 'dpabi'
+    module_namespace: 'common'
+    tags:
+      - 'latest'
+    command_collections:
+      - 'common'
+      - 'dpabi'
+    flag_collections:
+      - 'common'
+      - 'dpabi'
