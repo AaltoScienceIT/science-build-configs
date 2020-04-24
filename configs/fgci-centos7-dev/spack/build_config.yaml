@@ -160,6 +160,7 @@ packages:
       - '+mpi'
       - '+papi'
       - '+pdt'
+      - '+cuda'
   - name: 'texlive'
     version: 'live'
   - name: 'upcxx'
