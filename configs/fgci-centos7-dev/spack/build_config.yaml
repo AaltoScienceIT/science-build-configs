@@ -189,8 +189,8 @@ packages:
     variants:
       - 'blas=mkl'
       - '~cuda'
-      - '+plumed'
       - '+mpi'
       - '+openmp'
     dependencies:
       - '^intel-mkl@2019.3.199'
+      - '^guile~threads'
