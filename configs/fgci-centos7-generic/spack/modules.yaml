@@ -67,6 +67,10 @@ modules:
         '^python@:2.9'   : 'python2'
         '^r@3.4.3'       : 'r-3.4.3'
         '^r@3.5.0'       : 'r-3.5.0'
+    cp2k:
+      environment:
+        set:
+          CP2K_DATA_DIR: '${PREFIX}/share/data'
     geant4:
       environment:
         set:
@@ -79,6 +83,9 @@ modules:
         prepend_path:
           LIBRARY_PATH: '${PREFIX}/lib/gcc/x86_64-unknown-linux-gnu/${VERSION}'
           LD_LIBRARY_PATH: '${PREFIX}/lib/gcc/x86_64-unknown-linux-gnu/${VERSION}'
+    fftw:
+      suffixes:
+        '+openmp'        : 'openmp'
     intel-parallel-studio:
       environment:
         set:
