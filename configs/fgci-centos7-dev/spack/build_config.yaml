@@ -189,6 +189,7 @@ packages:
     variants:
       - 'blas=mkl'
       - '~cuda'
+      - '+plumed'
       - '+mpi'
       - '+openmp'
     dependencies:
