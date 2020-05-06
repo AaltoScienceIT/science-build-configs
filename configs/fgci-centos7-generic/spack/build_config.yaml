@@ -176,3 +176,12 @@ packages:
       platform: linux
       os: centos7
       arch: x86_64
+  - name: 'cp2k'
+    version: '6.1'
+    variants:
+      - 'blas=mkl'
+      - '~cuda'
+      - '+mpi'
+      - '+openmp'
+    dependencies:
+      - '^intel-mkl@2019.3.199'
