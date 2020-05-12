@@ -110,12 +110,6 @@ packages:
       - '~vtk'
       - '~openmp'
   - name: 'openfoam'
-    version: '1812_190531'
-    variants:
-      - '+metis'
-      - '+scotch'
-      - '+mgridgen'
-  - name: 'openfoam'
     version: '1906'
     variants:
       - '+metis'

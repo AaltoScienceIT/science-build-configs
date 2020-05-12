@@ -71,6 +71,9 @@ modules:
       environment:
         set:
           CP2K_DATA_DIR: '${PREFIX}/share/data'
+      suffixes:
+        '+openmp +mpi'   : 'psmp'
+        '~openmp +mpi'   : 'popt'
     geant4:
       environment:
         set:
@@ -92,3 +95,11 @@ modules:
           SLURM_MPI_TYPE: 'pmi2'
       suffixes:
         '+mpi'           : 'intelmpi'
+    openblas:
+      suffixes:
+        'threads=none'   : 'singlethreaded'
+        'threads=openmp' : 'openmp'
+    scalapack:
+      suffixes:
+        '^openblas threads=none': 'singlethreaded'
+        '^openblas threads=openmp': 'openmp'
