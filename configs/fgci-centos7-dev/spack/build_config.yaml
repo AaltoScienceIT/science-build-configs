@@ -193,3 +193,10 @@ packages:
       - '+openmp'
     dependencies:
       - '^intel-mkl@2019.3.199'
+  - name: 'cp2k'
+    version: '6.1'
+    variants:
+      - 'blas=openblas'
+      - '~cuda'
+      - '+mpi'
+      - '~openmp'

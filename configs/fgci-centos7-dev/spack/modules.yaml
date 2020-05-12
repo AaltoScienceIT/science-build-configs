@@ -69,6 +69,9 @@ modules:
       environment:
         set:
           CP2K_DATA_DIR: '${PREFIX}/share/data'
+      suffixes:
+        '+openmp +mpi': 'psmp'
+        '~openmp +mpi': 'popt'
     geant4:
       environment:
         set:
