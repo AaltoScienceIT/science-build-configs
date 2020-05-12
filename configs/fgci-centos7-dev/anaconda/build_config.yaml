@@ -60,6 +60,7 @@ environments:
         - IBMDecisionOptimization
         - anaconda
         - mosek
+        - rapidsai
         - conda-forge
     collections:
       - tensorflow-v2
@@ -126,6 +127,8 @@ collections:
       - cuda100
       - cudatoolkit
       - cudnn
+      - cupy
+      - cusignal
       - cython
       - dill
       - distributed
