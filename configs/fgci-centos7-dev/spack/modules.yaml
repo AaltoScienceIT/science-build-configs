@@ -96,6 +96,8 @@ modules:
     openblas:
       suffixes:
         'threads=none'   : 'singlethreaded'
+        'threads=openmp' : 'openmp'
     scalapack:
       suffixes:
         '^openblas threads=none': 'singlethreaded'
+        '^openblas threads=openmp': 'openmp'
