@@ -326,7 +326,6 @@ collections:
       - plotly
       - psutil
       - pycairo
-      - pygraphviz
       - pyopengl
       - pyqt
       - pyserial
