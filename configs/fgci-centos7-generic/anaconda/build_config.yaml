@@ -226,7 +226,7 @@ collections:
       - more-itertools
       - mosek
       - mpi4py
-      - mpich2
+      - mpich
       - navigator-updater
       - nbconvert
       - nbdime
