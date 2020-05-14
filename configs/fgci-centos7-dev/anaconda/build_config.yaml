@@ -292,7 +292,6 @@ collections:
       - xlwt
   neuroimaging:
     conda_packages:
-      - python=3.6
       - captum
       - cffi
       - configobj
