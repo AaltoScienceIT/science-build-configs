@@ -93,6 +93,7 @@ environments:
       channels:
         - defaults
         - pytorch
+        - r
     collections:
       - neuroimaging
 collections:
