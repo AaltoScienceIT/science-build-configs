@@ -84,6 +84,42 @@ environments:
     collections:
       - tensorflow-v2
       - triton-generic
+  - name: anaconda
+    version: '2020-03-tf1'
+    miniconda: False
+    python_version: 3
+    installer_version: '2020.02'
+    condarc:
+      channels:
+        - defaults
+        - pytorch
+        - gurobi
+        - IBMDecisionOptimization
+        - anaconda
+        - mosek
+        - rapidsai
+        - conda-forge
+    collections:
+      - tensorflow-v1
+      - triton-generic
+  - name: anaconda
+    version: '2020-03-tf2'
+    miniconda: False
+    python_version: 3
+    installer_version: '2020.02'
+    condarc:
+      channels:
+        - defaults
+        - pytorch
+        - gurobi
+        - IBMDecisionOptimization
+        - anaconda
+        - mosek
+        - rapidsai
+        - conda-forge
+    collections:
+      - tensorflow-v2
+      - triton-generic
 collections:
   tensorflow-v1:
     conda_packages:
@@ -144,6 +180,8 @@ collections:
       - cuda100
       - cudatoolkit
       - cudnn
+      - cupy
+      - cusignal
       - cython
       - dill
       - distributed
