@@ -131,7 +131,7 @@ collections:
   tensorflow-v2:
     conda_packages:
       - tensorboard
-      - tensorflow=2.0.0
+      - tensorflow=2.1.0
       - tensorflow-base
       - tensorflow-estimator
       - tensorflow-gpu
