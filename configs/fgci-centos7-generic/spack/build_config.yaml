@@ -179,7 +179,7 @@ packages:
   - name: 'cp2k'
     version: '6.1'
     variants:
-      - 'blas=mkl'
+      - 'blas=openblas'
       - '~cuda'
       - '+mpi'
       - '+openmp'
