@@ -94,6 +94,7 @@ environments:
         - defaults
         - pytorch
         - r
+        - conda-forge
     collections:
       - neuroimaging
 collections:
@@ -293,6 +294,7 @@ collections:
       - xlwt
   neuroimaging:
     conda_packages:
+      - python=3.7
       - captum
       - cffi
       - configobj
@@ -355,7 +357,7 @@ collections:
       - tornado
       - tqdm
       - vispy
-      - vtk=8.1
+      - vtk=8.1.2
       - wxpython
       - xlrd
     pip_packages:
