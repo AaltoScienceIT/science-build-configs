@@ -104,6 +104,19 @@ definitions:
       - 'common'
       - 'dgx'
       - 'nvidia'
+  - name: 'nvidia-cntk'
+    docker_user: 'nvidia'
+    docker_image: 'cntk'
+    registry: 'nvcr.io'
+    module_namespace: 'common'
+    tags:
+      - '18.08-py3'
+    command_collections:
+      - 'common'
+    flag_collections:
+      - 'common'
+      - 'nvidia'
+      - 'cntk'
   - name: 'nvidia-pytorch'
     docker_user: 'nvidia'
     docker_image: 'pytorch'
