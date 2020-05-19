@@ -196,3 +196,13 @@ packages:
       - '~cuda'
       - '+mpi'
       - '~openmp'
+  - name: 'cp2k'
+    version: '6.1'
+    variants:
+      - 'blas=openblas'
+      - '+cuda'
+      - '+mpi'
+      - '+openmp'
+      - '+cuda_blas'
+      - '+cuda_fft'
+      - 'cuda_arch=37'

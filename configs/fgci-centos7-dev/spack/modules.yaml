@@ -72,6 +72,8 @@ modules:
       suffixes:
         '+openmp +mpi'   : 'psmp'
         '~openmp +mpi'   : 'popt'
+        'cuda_arch=37'   : 'kepler'
+        'cuda_arch=60'   : 'pascal'
     geant4:
       environment:
         set:
