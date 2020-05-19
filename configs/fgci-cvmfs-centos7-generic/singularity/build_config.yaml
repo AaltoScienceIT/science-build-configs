@@ -20,6 +20,8 @@ flag_collections:
     - '-B /m:/m'
     - '-B /l:/l'
     - '-B /scratch:/scratch'
+  cntk:
+    - '-B /tmp:/run/lock'
   nvidia:
     - '--nv'
   openpose:
