@@ -4,7 +4,7 @@ config:
   source_cache: /cache/singularity/source
   tmpdir: /tmp/singularity
   build_stage: /cache/singularity/stage
-  wrapper_path: /cvmfs/fgi.csc.fi/apps/el7/aalto/singularity_wrapper
+  wrapper_path: /cvmfs/fgi.csc.fi/apps/el7/aalto/singularity-wrapper/bin
   remove_after_update: True
   sudo: False
   fakeroot: True
