@@ -194,3 +194,10 @@ packages:
       - '~cuda'
       - '+mpi'
       - '~openmp'
+  - name: 'hdf5'
+    version: 1.10.5
+    variants:
+      - '+fortran'
+      - '+hl'
+      - '+mpi'
+      - '+pic'
