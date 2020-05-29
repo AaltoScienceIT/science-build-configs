@@ -201,3 +201,8 @@ packages:
       - '+hl'
       - '+mpi'
       - '+pic'
+  - name: 'boost'
+    version: 1.70.0
+    variants:
+      - '+mpi'
+      - '+pic'
