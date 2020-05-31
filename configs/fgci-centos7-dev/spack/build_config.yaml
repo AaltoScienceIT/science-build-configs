@@ -220,4 +220,4 @@ packages:
       - '+mpi'
       - '+pic'
   - name: 'emacs'
-    version: 26.3
+    version: '26.3'
