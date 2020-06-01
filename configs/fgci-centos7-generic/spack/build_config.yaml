@@ -206,3 +206,5 @@ packages:
     variants:
       - '+mpi'
       - '+pic'
+  - name: 'emacs'
+    version: '26.2'
