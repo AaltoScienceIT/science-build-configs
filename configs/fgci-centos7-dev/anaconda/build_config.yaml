@@ -103,14 +103,14 @@ collections:
   tensorflow-v1:
     conda_packages:
       - tensorboard
-      - tensorflow=1.15.0
+      - tensorflow=1.*.*
       - tensorflow-base
       - tensorflow-estimator
       - tensorflow-gpu
   tensorflow-v2:
     conda_packages:
       - tensorboard
-      - tensorflow=2.1.0
+      - tensorflow=2.*.*
       - tensorflow-base
       - tensorflow-estimator
       - tensorflow-gpu
