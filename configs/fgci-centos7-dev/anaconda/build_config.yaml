@@ -59,7 +59,6 @@ environments:
         - pytorch
         - gurobi
         - IBMDecisionOptimization
-        - anaconda
         - mosek
         - rapidsai
         - conda-forge
@@ -77,7 +76,6 @@ environments:
         - pytorch
         - gurobi
         - IBMDecisionOptimization
-        - anaconda
         - mosek
         - rapidsai
         - conda-forge
@@ -103,7 +101,7 @@ collections:
   tensorflow-v1:
     conda_packages:
       - tensorboard
-      - tensorflow=1.5.0
+      - tensorflow=1.5.*
       - tensorflow-base
       - tensorflow-estimator
       - tensorflow-gpu
@@ -127,10 +125,6 @@ collections:
       - python-igraph
       - roboschool
     conda_packages:
-      - anaconda
-      - anaconda-client
-      - anaconda-navigator
-      - anaconda-project
       - appdirs
       - asn1crypto
       - astropy
@@ -206,7 +200,6 @@ collections:
       - mosek
       - mpi4py
       - mpich
-      - navigator-updater
       - nbconvert
       - nbdime
       - nbstripout
