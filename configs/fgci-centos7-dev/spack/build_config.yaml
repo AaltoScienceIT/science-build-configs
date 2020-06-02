@@ -154,6 +154,12 @@ packages:
       - '+fftw'
       - '+mpi'
       - '+scalapack'
+  - name: 'py-gpaw'
+    version: 20.0.1
+    variants:
+      - '+fftw'
+      - '+mpi'
+      - '+scalapack'
   - name: 'scorep'
     version: '6.0'
     variants:
