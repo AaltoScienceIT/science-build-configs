@@ -157,7 +157,7 @@ packages:
       - '+scalapack'
       - '^py-ase@3.18.0'
   - name: 'py-gpaw'
-    version: 20.0.1
+    version: 20.1.0
     variants:
       - '+fftw'
       - '+mpi'
