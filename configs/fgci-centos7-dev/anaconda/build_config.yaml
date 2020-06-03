@@ -149,7 +149,7 @@ collections:
       - cairo
       - cffi
       - chardet
-      - cloudpickle
+      - cloudpickle=1.3.* # For pip package gym to install
       - clyent
       - colorama
       - conda
