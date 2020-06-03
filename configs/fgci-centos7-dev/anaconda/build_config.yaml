@@ -68,7 +68,7 @@ environments:
       - triton-generic
   - name: anaconda
     version: '2020-03-tf2'
-    miniconda: False
+    miniconda: True
     python_version: 3
     installer_version: 'py37_4.8.2'
     condarc:
