@@ -70,11 +70,11 @@ environments:
     version: '2020-03-tf2'
     miniconda: False
     python_version: 3
-    installer_version: '2020.02'
+    installer_version: 'py37_4.8.2'
     condarc:
       channels:
-        - defaults
         - pytorch
+        - defaults
         - gurobi
         - IBMDecisionOptimization
         - mosek
@@ -102,6 +102,7 @@ collections:
   tensorflow-v1:
     conda_packages:
       - tensorboard
+      - tensorboard-plugin-wit
       - tensorflow=1.15.0
       - tensorflow-base
       - tensorflow-estimator
@@ -109,6 +110,7 @@ collections:
   tensorflow-v2:
     conda_packages:
       - tensorboard
+      - tensorboard-plugin-wit
       - tensorflow=2.*.*
       - tensorflow-base
       - tensorflow-estimator
@@ -128,8 +130,10 @@ collections:
     conda_packages:
       - appdirs
       - asn1crypto
+      - astor
       - astropy
       - atomicwrites
+      - astunparse
       - backports
       - bcolz
       - bcrypt
@@ -137,10 +141,16 @@ collections:
       - bitarray
       - bkcharts
       - blaze
+      - blinker
       - bokeh
+      - boto
       - bottleneck
+      - cachetools
+      - cairo
       - cffi
       - chardet
+      - cloudpickle
+      - clyent
       - colorama
       - conda
       - conda-env
@@ -163,11 +173,18 @@ collections:
       - docutils
       - fastcache
       - fastparquet
-      - feather-format
+      - feather-formata
+      - filelock
+      - fribidi
+      - glob2
       - gmpy2
+      - google-auth-oauthlib
       - gpy
+      - graphite2
+      - greenlet
       - gurobi
       - h5py
+      - harfbuzz
       - hdf4
       - hdf5
       - heapdict
@@ -178,6 +195,8 @@ collections:
       - ipyparallel
       - ipython
       - ipywidgets
+      - jbig
+      - jdcal
       - joblib
       - jupyter
       - jupyter_contrib_nbextensions
@@ -214,11 +233,19 @@ collections:
       - numexpr
       - numpy
       - numpydoc
+      - oauthlib
       - olefile
       - openmp
+      - openpyxl
       - pandas
       - pandoc
+      - pango
+      - parquet-cpp
       - partd
+      - patchelf
+      - path
+      - path.py
+      - pathlib2
       - pbr
       - pep8
       - phonopy
@@ -226,10 +253,12 @@ collections:
       - pip
       - pipdeptree
       - pixman
+      - pkginfo
       - plotly
       - ply
       - prometheus_client
       - protobuf
+      - py-lief
       - pyarrow
       - pybind11
       - pycodestyle
@@ -239,6 +268,7 @@ collections:
       - pyflakes
       - pygments
       - pygpu
+      - pyjwt
       - pylint
       - pympler
       - pyopenssl
@@ -253,11 +283,15 @@ collections:
       - pytest-remotedata
       - python
       - python-dateutil
+      - python-libarchive-c
       - python-snappy
       - pytorch
       - pytz
       - pyyaml
       - requests
+      - requests-oauthlib
+      - ripgrep
+      - rsa
       - scikit-image
       - scikit-learn
       - seaborn
@@ -268,6 +302,7 @@ collections:
       - sortedcollections
       - sphinx
       - sphinxcontrib
+      - sphinxcontrib-websupport
       - sphinx_rtd_theme
       - spyder
       - sqlalchemy
@@ -280,12 +315,14 @@ collections:
       - twisted
       - typing
       - unicodecsv
+      - unixodbc
       - vtk
       - wheel
       - xgboost
       - xlrd
       - xlsxwriter
       - xlwt
+      - xmltodict
   neuroimaging:
     conda_packages:
       - python=3.7
