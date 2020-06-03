@@ -173,7 +173,7 @@ collections:
       - docutils
       - fastcache
       - fastparquet
-      - feather-formata
+      - feather-format
       - filelock
       - fribidi
       - glob2
