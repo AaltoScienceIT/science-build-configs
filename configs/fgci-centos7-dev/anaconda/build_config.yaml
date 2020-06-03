@@ -1,6 +1,7 @@
 installer_checksums:
   Miniconda3-latest-Linux-x86_64.sh: 'bfe34e1fa28d6d75a7ad05fd02fa5472275673d5f5621b77380898dee1be15d2'
   Miniconda3-4.7.12.1-Linux-x86_64.sh: 'bfe34e1fa28d6d75a7ad05fd02fa5472275673d5f5621b77380898dee1be15d2'
+  Miniconda3-py37_4.8.2-Linux-x86_64.sh: '957d2f0f0701c3d1335e3b39f235d197837ad69a944fa6f5d8ad2c686b69df3b'
   Anaconda3-2019.10-Linux-x86_64.sh: '46d762284d252e51cd58a8ca6c8adc9da2eadc82c342927b2f66ed011d1d8b53'
   Anaconda3-2020.02-Linux-x86_64.sh: '2b9f088b2022edb474915d9f69a803d6449d5fdb4c303041f60ac4aefcc208bb'
 environments:
@@ -50,13 +51,13 @@ environments:
       - triton-generic
   - name: anaconda
     version: '2020-03-tf1'
-    miniconda: False
+    miniconda: True
     python_version: 3
-    installer_version: '2020.02'
+    installer_version: 'py37_4.8.2'
     condarc:
       channels:
-        - defaults
         - pytorch
+        - defaults
         - gurobi
         - IBMDecisionOptimization
         - mosek
@@ -101,7 +102,7 @@ collections:
   tensorflow-v1:
     conda_packages:
       - tensorboard
-      - tensorflow=1.5.*
+      - tensorflow=1.15.0
       - tensorflow-base
       - tensorflow-estimator
       - tensorflow-gpu
