@@ -1,6 +1,7 @@
 installer_checksums:
   Miniconda3-latest-Linux-x86_64.sh: 'bfe34e1fa28d6d75a7ad05fd02fa5472275673d5f5621b77380898dee1be15d2'
   Miniconda3-4.7.12.1-Linux-x86_64.sh: 'bfe34e1fa28d6d75a7ad05fd02fa5472275673d5f5621b77380898dee1be15d2'
+  Miniconda3-py37_4.8.2-Linux-x86_64.sh: '957d2f0f0701c3d1335e3b39f235d197837ad69a944fa6f5d8ad2c686b69df3b'
   Anaconda3-2019.10-Linux-x86_64.sh: '46d762284d252e51cd58a8ca6c8adc9da2eadc82c342927b2f66ed011d1d8b53'
   Anaconda3-2020.02-Linux-x86_64.sh: '2b9f088b2022edb474915d9f69a803d6449d5fdb4c303041f60ac4aefcc208bb'
 environments:
@@ -14,16 +15,15 @@ environments:
         - defaults
   - name: anaconda
     version: '2020-03-tf1'
-    miniconda: False
+    miniconda: True
     python_version: 3
-    installer_version: '2020.02'
+    installer_version: 'py37_4.8.2'
     condarc:
       channels:
-        - defaults
         - pytorch
+        - defaults
         - gurobi
         - IBMDecisionOptimization
-        - anaconda
         - mosek
         - rapidsai
         - conda-forge
@@ -32,16 +32,15 @@ environments:
       - triton-generic
   - name: anaconda
     version: '2020-03-tf2'
-    miniconda: False
+    miniconda: True
     python_version: 3
-    installer_version: '2020.02'
+    installer_version: 'py37_4.8.2'
     condarc:
       channels:
-        - defaults
         - pytorch
+        - defaults
         - gurobi
         - IBMDecisionOptimization
-        - anaconda
         - mosek
         - rapidsai
         - conda-forge
@@ -52,6 +51,7 @@ collections:
   tensorflow-v1:
     conda_packages:
       - tensorboard
+      - tensorboard-plugin-wit
       - tensorflow=1.15.0
       - tensorflow-base
       - tensorflow-estimator
@@ -59,7 +59,8 @@ collections:
   tensorflow-v2:
     conda_packages:
       - tensorboard
-      - tensorflow=2.1.0
+      - tensorboard-plugin-wit
+      - tensorflow=2.*.*
       - tensorflow-base
       - tensorflow-estimator
       - tensorflow-gpu
@@ -76,14 +77,12 @@ collections:
       - python-igraph
       - roboschool
     conda_packages:
-      - anaconda
-      - anaconda-client
-      - anaconda-navigator
-      - anaconda-project
       - appdirs
       - asn1crypto
+      - astor
       - astropy
       - atomicwrites
+      - astunparse
       - backports
       - bcolz
       - bcrypt
@@ -91,10 +90,16 @@ collections:
       - bitarray
       - bkcharts
       - blaze
+      - blinker
       - bokeh
+      - boto
       - bottleneck
+      - cachetools
+      - cairo
       - cffi
       - chardet
+      - cloudpickle=1.3.* # For pip package gym to install
+      - clyent
       - colorama
       - conda
       - conda-env
@@ -118,10 +123,17 @@ collections:
       - fastcache
       - fastparquet
       - feather-format
+      - filelock
+      - fribidi
+      - glob2
       - gmpy2
+      - google-auth-oauthlib
       - gpy
+      - graphite2
+      - greenlet
       - gurobi
       - h5py
+      - harfbuzz
       - hdf4
       - hdf5
       - heapdict
@@ -132,6 +144,8 @@ collections:
       - ipyparallel
       - ipython
       - ipywidgets
+      - jbig
+      - jdcal
       - joblib
       - jupyter
       - jupyter_contrib_nbextensions
@@ -155,7 +169,6 @@ collections:
       - mosek
       - mpi4py
       - mpich
-      - navigator-updater
       - nbconvert
       - nbdime
       - nbstripout
@@ -169,11 +182,19 @@ collections:
       - numexpr
       - numpy
       - numpydoc
+      - oauthlib
       - olefile
       - openmp
+      - openpyxl
       - pandas
       - pandoc
+      - pango
+      - parquet-cpp
       - partd
+      - patchelf
+      - path
+      - path.py
+      - pathlib2
       - pbr
       - pep8
       - phonopy
@@ -181,10 +202,12 @@ collections:
       - pip
       - pipdeptree
       - pixman
+      - pkginfo
       - plotly
       - ply
       - prometheus_client
       - protobuf
+      - py-lief
       - pyarrow
       - pybind11
       - pycodestyle
@@ -194,6 +217,7 @@ collections:
       - pyflakes
       - pygments
       - pygpu
+      - pyjwt
       - pylint
       - pympler
       - pyopenssl
@@ -208,11 +232,15 @@ collections:
       - pytest-remotedata
       - python
       - python-dateutil
+      - python-libarchive-c
       - python-snappy
       - pytorch
       - pytz
       - pyyaml
       - requests
+      - requests-oauthlib
+      - ripgrep
+      - rsa
       - scikit-image
       - scikit-learn
       - seaborn
@@ -223,6 +251,7 @@ collections:
       - sortedcollections
       - sphinx
       - sphinxcontrib
+      - sphinxcontrib-websupport
       - sphinx_rtd_theme
       - spyder
       - sqlalchemy
@@ -235,9 +264,11 @@ collections:
       - twisted
       - typing
       - unicodecsv
+      - unixodbc
       - vtk
       - wheel
       - xgboost
       - xlrd
       - xlsxwriter
       - xlwt
+      - xmltodict
