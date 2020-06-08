@@ -16,10 +16,6 @@ command_collections:
       - 'apt-get -y install -q build-essential g++'
       - 'rm -rf /var/lib/apt/lists/*'
 flag_collections:
-  common:
-    - '-B /m:/m'
-    - '-B /l:/l'
-    - '-B /scratch:/scratch'
   cntk:
     - '-B /tmp:/run/lock'
   nvidia:
@@ -37,7 +33,6 @@ definitions:
     command_collections:
       - 'common'
     flag_collections:
-      - 'common'
       - 'nvidia'
       - 'cntk'
   - name: 'nvidia-pytorch'
@@ -51,7 +46,6 @@ definitions:
       - 'common'
       - 'compilers'
     flag_collections:
-      - 'common'
       - 'nvidia'
   - name: 'nvidia-tensorflow'
     docker_user: 'nvidia'
@@ -65,7 +59,6 @@ definitions:
       - 'common'
       - 'compilers'
     flag_collections:
-      - 'common'
       - 'nvidia'
   - name: 'singularity-openpose'
     docker_user: 'aaltoscienceit'
@@ -77,6 +70,5 @@ definitions:
     command_collections:
       - 'common'
     flag_collections:
-      - 'common'
       - 'nvidia'
       - 'openpose'
