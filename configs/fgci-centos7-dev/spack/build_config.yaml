@@ -85,6 +85,12 @@ packages:
     version: 1.19.0
   - name: 'cuda'
     version: 10.1.243
+  - name: 'ffmpeg'
+    version: '4.3'
+    variants:
+      - '+aom'
+      - '+shared'
+      - '+x264'
   - name: 'freesurfer'
     version: 6.0.0
     dependencies:
