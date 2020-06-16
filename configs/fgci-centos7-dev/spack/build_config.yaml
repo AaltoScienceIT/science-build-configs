@@ -124,7 +124,7 @@ packages:
       - '~vtk'
       - '~openmp'
     dependencies:
-      - '^ffmpeg@4.1'
+      - '^ffmpeg@4.1.1'
   - name: 'openfoam'
     version: '1906'
     variants:
