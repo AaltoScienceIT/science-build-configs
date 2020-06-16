@@ -123,6 +123,8 @@ packages:
       - '~cuda'
       - '~vtk'
       - '~openmp'
+    dependencies:
+      - '^ffmpeg@4.1'
   - name: 'openfoam'
     version: '1906'
     variants:
