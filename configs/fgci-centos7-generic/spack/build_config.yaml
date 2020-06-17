@@ -85,6 +85,12 @@ packages:
     version: 1.19.0
   - name: 'cuda'
     version: 10.1.243
+  - name: 'ffmpeg'
+    version: '4.3'
+    variants:
+      - '+aom'
+      - '+shared'
+      - '+x264'
   - name: 'freesurfer'
     version: 6.0.0
     dependencies:
@@ -117,6 +123,9 @@ packages:
       - '~cuda'
       - '~vtk'
       - '~openmp'
+      - 'arch=linux-centos7-westmere'
+    dependencies:
+      - '^ffmpeg@4.1.1'
   - name: 'openfoam'
     version: '1906'
     variants:
@@ -158,13 +167,6 @@ packages:
       - '+mpi'
       - '+scalapack'
       - '^py-ase@3.18.0'
-  - name: 'scorep'
-    version: '6.0'
-    variants:
-      - '+mpi'
-      - '+papi'
-      - '+pdt'
-      - '+cuda'
   - name: 'py-gpaw'
     version: 20.1.0
     variants:
@@ -172,6 +174,13 @@ packages:
       - '+mpi'
       - '+scalapack'
       - '^py-ase@3.19.0'
+  - name: 'scorep'
+    version: '6.0'
+    variants:
+      - '+mpi'
+      - '+papi'
+      - '+pdt'
+      - '+cuda'
   - name: 'texlive'
     version: 'live'
   - name: 'upcxx'
