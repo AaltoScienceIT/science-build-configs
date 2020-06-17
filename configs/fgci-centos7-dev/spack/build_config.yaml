@@ -123,6 +123,7 @@ packages:
       - '~cuda'
       - '~vtk'
       - '~openmp'
+      - 'arch=linux-centos7-westmere'
     dependencies:
       - '^ffmpeg@4.1.1'
   - name: 'openfoam'
