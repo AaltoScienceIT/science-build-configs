@@ -49,7 +49,7 @@ packages:
   qt:
     variants: +phonon +dbus +opengl +webkit
   r:
-    version: [3.6.1]
+    version: [3.6.3, 3.6.1]
     variants: +X +external-lapack
   slurm:
     version: [18-08-8-1]
