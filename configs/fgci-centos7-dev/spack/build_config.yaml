@@ -235,6 +235,28 @@ packages:
       - '+cuda_fft'
       - 'cuda_arch=37'
       - '%gcc@6.5.0'
+  - name: 'cp2k'
+    version: '6.1'
+    variants:
+      - 'blas=openblas'
+      - '+cuda'
+      - '+mpi'
+      - '+openmp'
+      - '+cuda_blas'
+      - '+cuda_fft'
+      - 'cuda_arch=60'
+      - '%gcc@6.5.0'
+  - name: 'cp2k'
+    version: '6.1'
+    variants:
+      - 'blas=openblas'
+      - '+cuda'
+      - '+mpi'
+      - '+openmp'
+      - '+cuda_blas'
+      - '+cuda_fft'
+      - 'cuda_arch=70'
+      - '%gcc@6.5.0'
   - name: 'hdf5'
     version: 1.10.5
     variants:

@@ -77,6 +77,7 @@ modules:
         '~openmp +mpi'   : 'popt'
         'cuda_arch=37'   : 'kepler'
         'cuda_arch=60'   : 'pascal'
+        'cuda_arch=70'   : 'volta'
     geant4:
       environment:
         set:
