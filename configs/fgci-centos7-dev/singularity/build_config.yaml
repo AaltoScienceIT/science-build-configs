@@ -186,7 +186,7 @@ definitions:
       - 'latest'
     command_collections:
       - 'common'
-      - 'dpabi'
+      - 'mriqc'
     flag_collections:
       - 'common'
-      - 'dpabi'
+      - 'mriqc'
