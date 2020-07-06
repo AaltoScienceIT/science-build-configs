@@ -186,7 +186,5 @@ definitions:
       - 'latest'
     command_collections:
       - 'common'
-      - 'mriqc'
     flag_collections:
       - 'common'
-      - 'mriqc'
