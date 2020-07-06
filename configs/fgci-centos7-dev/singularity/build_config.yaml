@@ -178,3 +178,15 @@ definitions:
     flag_collections:
       - 'common'
       - 'dpabi'
+  - name: 'singularity-mriqc'
+    docker_user: 'poldracklab'
+    docker_image: 'mriqc'
+    module_namespace: 'common'
+    tags:
+      - 'latest'
+    command_collections:
+      - 'common'
+      - 'dpabi'
+    flag_collections:
+      - 'common'
+      - 'dpabi'
