@@ -321,7 +321,7 @@ collections:
       - python-dateutil
       - python-libarchive-c
       - python-snappy
-      - pytorch
+      - pytorch=1.5.*
       - pytz
       - pyyaml
       - requests
