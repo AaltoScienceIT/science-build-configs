@@ -90,6 +90,7 @@ environments:
     miniconda: True
     python_version: 3
     installer_version: 'py37_4.8.2'
+    freeze: True
     condarc:
       channels:
         - pytorch
@@ -104,6 +105,24 @@ environments:
       - triton-generic
   - name: anaconda
     version: '2020-03-tf2'
+    miniconda: True
+    python_version: 3
+    installer_version: 'py37_4.8.2'
+    freeze: True
+    condarc:
+      channels:
+        - pytorch
+        - defaults
+        - gurobi
+        - IBMDecisionOptimization
+        - mosek
+        - rapidsai
+        - conda-forge
+    collections:
+      - tensorflow-v2
+      - triton-generic
+  - name: anaconda
+    version: '2020-04-tf2'
     miniconda: True
     python_version: 3
     installer_version: 'py37_4.8.2'
@@ -304,11 +323,11 @@ collections:
       - pytest-doctestplus
       - pytest-openfiles
       - pytest-remotedata
-      - python
+      - python=3.7.*
       - python-dateutil
       - python-libarchive-c
       - python-snappy
-      - pytorch
+      - pytorch=1.5.*
       - pytz
       - pyyaml
       - requests
