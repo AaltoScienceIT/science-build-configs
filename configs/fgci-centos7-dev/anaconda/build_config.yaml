@@ -315,6 +315,7 @@ collections:
       - scikit-learn
       - seaborn
       - setuptools
+      - sh
       - simplegeneric
       - singledispatch
       - six
@@ -452,7 +453,6 @@ collections:
       - pythreejs
       - pyvista
       - rise
-      - sh
       - sounddevice
       - spacy
       - sphinx_bootstrap_theme
