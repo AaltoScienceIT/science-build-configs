@@ -452,6 +452,7 @@ collections:
       - pythreejs
       - pyvista
       - rise
+      - sh
       - sounddevice
       - spacy
       - sphinx_bootstrap_theme
