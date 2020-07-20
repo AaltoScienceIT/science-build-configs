@@ -338,6 +338,7 @@ collections:
       - scikit-learn
       - seaborn
       - setuptools
+      - sh
       - simplegeneric
       - singledispatch
       - six
