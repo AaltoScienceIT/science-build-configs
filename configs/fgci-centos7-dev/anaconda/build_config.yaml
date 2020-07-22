@@ -117,8 +117,6 @@ environments:
 #      - neuroimaging
 collections:
   tensorflow-v1:
-collections:
-  tensorflow-v1:
     conda_packages:
       - tensorboard
       - tensorboard-plugin-wit
