@@ -271,3 +271,7 @@ packages:
       - '+pic'
   - name: 'emacs'
     version: '26.2'
+  - name: 'glew'
+    version: 2.1.0
+    dependencies:
+      - '^mesa+opengl+osmesa~llvm'
