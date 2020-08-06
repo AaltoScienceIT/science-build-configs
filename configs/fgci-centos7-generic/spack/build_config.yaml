@@ -240,3 +240,7 @@ packages:
     version: 2.1.0
     dependencies:
       - '^mesa+opengl+osmesa~llvm'
+  - name: 'nvtop'
+    version: 1.0.0
+    dependencies:
+      - '%gcc@6.5.0'
