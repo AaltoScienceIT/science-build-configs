@@ -24,6 +24,20 @@ compilers:
       platform: linux
       os: ubuntu18.04
       arch: x86_64
+  - name: 'gcc'
+    version: 6.5.0
+    variants:
+      - '+piclibs'
+    dependencies:
+      - '%gcc@7.4.0'
+    flags:
+      cflags: -O2 -g -march=westmere -ftree-vectorize
+      cxxflags: -O2 -g -march=westmere -ftree-vectorize
+      fflags: -O2 -g -march=westmere -ftree-vectorize
+    target_architecture:
+      platform: linux
+      os: centos7
+      arch: x86_64
   - name: 'intel-parallel-studio'
     version: 'cluster.2019.3'
     licenses:
