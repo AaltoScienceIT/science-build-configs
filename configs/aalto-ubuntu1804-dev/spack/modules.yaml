@@ -32,7 +32,7 @@ modules:
       - 'clhep'
       - 'xerces-c'
     blacklist:
-      - '%gcc@4.8.5'
+      - '%gcc@7.4.0'
       - 'autoconf'
       - 'automake'
       - 'bdftopcf'
