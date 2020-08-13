@@ -107,3 +107,6 @@ modules:
       suffixes:
         '^openblas threads=none': 'singlethreaded'
         '^openblas threads=openmp': 'openmp'
+    texlive:
+      suffixes:
+        'scheme=full'    : 'full'
