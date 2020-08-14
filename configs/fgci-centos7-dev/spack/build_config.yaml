@@ -197,10 +197,6 @@ packages:
       - '+cuda'
   - name: 'texlive'
     version: 'live'
-  - name: 'texlive'
-    version: 'live'
-    variants:
-      - 'scheme=full'
   - name: 'upcxx'
     version: 2019.3.2
   - name: 'valgrind'
