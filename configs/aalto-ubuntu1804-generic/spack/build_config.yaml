@@ -67,6 +67,8 @@ packages:
     version: 10.1.243
   - name: 'go'
     version: 1.12.8
+    dependencies:
+      - '^git@2.21.0'
   - name: 'heaptrack'
     version: 1.1.0
   - name: 'opencv'
@@ -75,6 +77,7 @@ packages:
       - '~cuda'
       - '~vtk'
       - '~openmp'
+      - 'arch=linux-ubuntu18.04-westmere'
   - name: 'openfoam'
     version: '1812_190531'
     variants:
@@ -103,6 +106,7 @@ packages:
       - '+fftw'
       - '+mpi'
       - '+scalapack'
+    dependencies:
       - '^py-ase@3.18.0'
   - name: 'py-gpaw'
     version: 19.8.1
@@ -110,6 +114,7 @@ packages:
       - '+fftw'
       - '+mpi'
       - '+scalapack'
+    dependencies:
       - '^py-ase@3.18.0'
   - name: 'py-gpaw'
     version: 20.1.0
@@ -117,6 +122,7 @@ packages:
       - '+fftw'
       - '+mpi'
       - '+scalapack'
+    dependencies:
       - '^py-ase@3.19.0'
   - name: 'texlive'
     version: 'live'
