@@ -103,12 +103,21 @@ packages:
       - '+fftw'
       - '+mpi'
       - '+scalapack'
+      - '^py-ase@3.18.0'
   - name: 'py-gpaw'
     version: 19.8.1
     variants:
       - '+fftw'
       - '+mpi'
       - '+scalapack'
+      - '^py-ase@3.18.0'
+  - name: 'py-gpaw'
+    version: 20.1.0
+    variants:
+      - '+fftw'
+      - '+mpi'
+      - '+scalapack'
+      - '^py-ase@3.19.0'
   - name: 'texlive'
     version: 'live'
   - name: 'upcxx'
