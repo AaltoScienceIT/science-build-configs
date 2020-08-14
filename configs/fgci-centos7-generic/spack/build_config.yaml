@@ -171,6 +171,7 @@ packages:
       - '+fftw'
       - '+mpi'
       - '+scalapack'
+    dependencies:
       - '^py-ase@3.18.0'
   - name: 'py-gpaw'
     version: 19.8.1
@@ -178,6 +179,7 @@ packages:
       - '+fftw'
       - '+mpi'
       - '+scalapack'
+    dependencies:
       - '^py-ase@3.18.0'
   - name: 'py-gpaw'
     version: 20.1.0
@@ -185,6 +187,7 @@ packages:
       - '+fftw'
       - '+mpi'
       - '+scalapack'
+    dependencies:
       - '^py-ase@3.19.0'
   - name: 'scorep'
     version: '6.0'
