@@ -77,7 +77,6 @@ packages:
       - '~cuda'
       - '~vtk'
       - '~openmp'
-      - 'arch=linux-ubuntu18.04-westmere'
   - name: 'openfoam'
     version: '1812_190531'
     variants:
