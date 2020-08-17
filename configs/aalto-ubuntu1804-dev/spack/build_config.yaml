@@ -67,6 +67,8 @@ packages:
     version: 10.1.243
   - name: 'go'
     version: 1.12.8
+    dependencies:
+      - '^git@2.21.0'
   - name: 'heaptrack'
     version: 1.1.0
   - name: 'opencv'
@@ -103,12 +105,24 @@ packages:
       - '+fftw'
       - '+mpi'
       - '+scalapack'
+    dependencies:
+      - '^py-ase@3.18.0'
   - name: 'py-gpaw'
     version: 19.8.1
     variants:
       - '+fftw'
       - '+mpi'
       - '+scalapack'
+    dependencies:
+      - '^py-ase@3.18.0'
+  - name: 'py-gpaw'
+    version: 20.1.0
+    variants:
+      - '+fftw'
+      - '+mpi'
+      - '+scalapack'
+    dependencies:
+      - '^py-ase@3.19.0'
   - name: 'upcxx'
     version: 2019.3.2
   - name: 'valgrind'
