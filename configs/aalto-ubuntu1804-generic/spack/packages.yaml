@@ -5,6 +5,9 @@ packages:
     variants: +libssh2 ~nghttp
   fontconfig:
     version: [2.12.3]
+  ffmpeg:
+    version: ['4.3']
+    variants: +aom +shared +x264
   gcc:
     version: [9.2.0]
   go:
