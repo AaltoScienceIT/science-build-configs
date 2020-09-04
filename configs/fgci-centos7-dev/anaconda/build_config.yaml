@@ -144,6 +144,7 @@ collections:
       - pymanopt
       - python-igraph
       - roboschool
+      - snakemake
     conda_packages:
       - appdirs
       - asn1crypto
