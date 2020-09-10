@@ -297,7 +297,6 @@ packages:
   - name: 'quantum-espresso'
     version: '6.6'
     variants:
-      - '+elpa'
       - '+epw'
       - 'hdf5=parallel'
       - '+mpi'
