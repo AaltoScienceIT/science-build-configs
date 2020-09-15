@@ -34,7 +34,7 @@ modules:
     blacklist:
       - '%gcc@4.8.5'
     core_compilers:
-      - 'gcc@9.2.0'
+      - 'gcc@9.3.0'
       - 'gcc@4.8.5'
     hash_length: 0
     all:
@@ -62,8 +62,7 @@ modules:
         '^ucx'           : 'ucx'
         '^python@3:'     : 'python3'
         '^python@:2.9'   : 'python2'
-        '^r@3.4.3'       : 'r-3.4.3'
-        '^r@3.5.0'       : 'r-3.5.0'
+        '^r@3.6.3'       : 'r-3.6.3'
     geant4:
       environment:
         set:

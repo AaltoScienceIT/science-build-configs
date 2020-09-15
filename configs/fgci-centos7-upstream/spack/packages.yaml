@@ -4,12 +4,12 @@ packages:
   curl:
     variants: +libssh2 ~nghttp
   fontconfig:
-    version: [2.12.1]
+    version: [2.13.1]
   gcc:
-    version: [9.2.0]
+    version: [9.3.0]
     variants: +piclibs
   go:
-    version: [1.12.8]
+    version: [1.15.1]
   graphviz:
     variants: +expat +ghostscript +gtkplus +gts +java +libgd +pangocairo +qt
   hdf5:
@@ -24,13 +24,13 @@ packages:
     buildable: False
   mesa:
     variants: +glx +llvm +opengl +osmesa swr=none
-  netcdf:
-    version: [4.6.3]
+  netcdf-c:
+    version: [4.7.4]
   openblas:
-    version: [0.3.7]
-    variants: +virtual_machine threads=pthreads +avx2 +pic
+    version: [0.3.10]
+    variants: +virtual_machine threads=pthreads +pic
   openmpi:
-    version: [3.1.4]
+    version: [4.0.5]
     variants: fabrics=verbs +pmi +thread_multiple schedulers=slurm +legacylaunchers
   openssl:
     version: [1.0.2k]
@@ -42,14 +42,14 @@ packages:
   pcre:
     variants: +jit +utf
   python:
-    version: [3.7.4]
+    version: [3.8.5]
     variants: +pic +shared +optimizations +uuid
   qmd-progress:
     variants: +graphlib
   qt:
     variants: +phonon +dbus +opengl +webkit
   r:
-    version: [3.6.1]
+    version: [3.6.3]
     variants: +X +external-lapack
   slurm:
     version: [18-08-8-1]
@@ -57,8 +57,8 @@ packages:
       slurm@18-08-8-1: /usr
     buildable: False
   sqlite:
-    version: [3.28.0]
-    variants: ~column_metadata +fts ~functions ~rtree
+    version: [3.33.0]
+    variants: +column_metadata +fts +functions +rtree
   all:
     compiler: [gcc, intel, pgi, clang, xl, nag]
     providers:
