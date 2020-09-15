@@ -19,8 +19,9 @@ packages:
   llvm:
     variants: +python
   m4:
-    paths:
-      m4: /fake/path
+    externals:
+      - spec: m4@1.4.16
+        prefix: /usr
     buildable: False
   mesa:
     variants: +glx +llvm +opengl +osmesa swr=none
@@ -33,9 +34,9 @@ packages:
     version: [4.0.5]
     variants: fabrics=verbs +pmi +thread_multiple schedulers=slurm +legacylaunchers
   openssl:
-    version: [1.0.2k]
-    paths:
-      openssl@1.0.2k: /usr
+    externals:
+      - spec: openssl@1.0.2k
+        prefix: /usr
     buildable: False
   pango:
     variants: +X
@@ -52,9 +53,9 @@ packages:
     version: [3.6.3]
     variants: +X +external-lapack
   slurm:
-    version: [18-08-8-1]
-    paths:
-      slurm@18-08-8-1: /usr
+    externals:
+      - spec: slurm@18-08-8-1
+        prefix: /usr
     buildable: False
   sqlite:
     version: [3.33.0]
