@@ -296,10 +296,3 @@ packages:
       - '%gcc@6.5.0'
   - name: 'git-lfs'
     version: 2.11.0
-  - name: 'quantum-espresso'
-    version: '6.6'
-    variants:
-      - '+epw'
-      - 'hdf5=parallel'
-      - '+mpi'
-      - '+scalapack'
