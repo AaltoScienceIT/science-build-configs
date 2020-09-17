@@ -85,6 +85,8 @@ packages:
     version: 1.19.0
   - name: 'cuda'
     version: 10.1.243
+  - name: 'cuda'
+    version: 10.2.89
   - name: 'ffmpeg'
     version: '4.3'
     variants:
