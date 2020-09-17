@@ -1,6 +1,8 @@
 packages:
   cairo:
     variants: +X
+  cuda:
+    version: [10.1.243]
   curl:
     variants: +libssh2 ~nghttp
   gcc:
