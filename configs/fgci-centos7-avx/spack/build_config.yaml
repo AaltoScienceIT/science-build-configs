@@ -1,0 +1,73 @@
+target_architecture:
+  platform: linux
+  os: centos7
+  arch: ivybridge
+compilers:
+  - name: 'gcc'
+    version: 4.8.5
+    system_compiler: true
+    flags:
+      cflags: -O2 -g
+      cxxflags: -O2 -g
+      fflags: -O2 -g
+  - name: 'gcc'
+    version: 9.3.0
+    variants:
+      - '+piclibs'
+    dependencies:
+      - '%gcc@4.8.5'
+    flags:
+      cflags: -O2 -g -march=ivybridge -ftree-vectorize
+      cxxflags: -O2 -g -march=ivybridge -ftree-vectorize
+      fflags: -O2 -g -march=ivybridge -ftree-vectorize
+    target_architecture:
+      platform: linux
+      os: centos7
+      arch: x86_64
+  - name: 'gcc'
+    version: 6.5.0
+    variants:
+      - '+piclibs'
+    dependencies:
+      - '%gcc@4.8.5'
+    flags:
+      cflags: -O2 -g -march=ivybridge -ftree-vectorize
+      cxxflags: -O2 -g -march=ivybridge -ftree-vectorize
+      fflags: -O2 -g -march=ivybridge -ftree-vectorize
+    target_architecture:
+      platform: linux
+      os: centos7
+      arch: x86_64
+  - name: 'intel-parallel-studio'
+    version: 'cluster.2019.3'
+    licenses:
+      - 'license.lic'
+    variants:
+      - '+mpi'
+    dependencies:
+      - '%gcc@9.3.0'
+    flags:
+      cflags: -O2 -g -march=ivybridge
+      cxxflags: -O2 -g -march=ivybridge
+      fflags: -O2 -g -march=ivybridge
+    target_architecture:
+      platform: linux
+      os: centos7
+      arch: x86_64
+  - name: 'intel-parallel-studio'
+    version: 'cluster.2020.0'
+    licenses:
+      - 'license.lic'
+    variants:
+      - '+mpi'
+    dependencies:
+      - '%gcc@9.3.0'
+    flags:
+      cflags: -O2 -g -march=ivybridge
+      cxxflags: -O2 -g -march=ivybridge
+      fflags: -O2 -g -march=ivybridge
+    target_architecture:
+      platform: linux
+      os: centos7
+      arch: x86_64
+packages: []
