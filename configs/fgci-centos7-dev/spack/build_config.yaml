@@ -300,3 +300,5 @@ packages:
     version: 8.1.0338
     variants:
       - '+huge'
+  - name: 'man-db'
+    version: 2.7.6.1
