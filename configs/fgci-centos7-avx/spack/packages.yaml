@@ -50,7 +50,7 @@ packages:
   qt:
     variants: +phonon +dbus +opengl +webkit
   r:
-    version: [3.6.3]
+    version: [4.0.2]
     variants: +X +external-lapack
   slurm:
     externals:
