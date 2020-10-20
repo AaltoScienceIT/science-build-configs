@@ -51,7 +51,6 @@ flag_collections:
   common:
     - '-B /m:/m'
     - '-B /l:/l'
-    - '-B /scratch:/scratch'
   dgx:
     - '-B /raid:/raid'
   nvidia:
