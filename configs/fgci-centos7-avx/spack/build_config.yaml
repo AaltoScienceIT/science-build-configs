@@ -70,4 +70,11 @@ compilers:
       platform: linux
       os: centos7
       arch: x86_64
-packages: []
+packages:
+  - name: 'quantum-espresso'
+    version: '6.7'
+    variants:
+      - '+epw'
+      - 'hdf5=parallel'
+      - '+mpi'
+      - '+scalapack'
