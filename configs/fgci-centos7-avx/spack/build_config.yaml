@@ -72,7 +72,7 @@ compilers:
       arch: x86_64
 packages:
   - name: 'quantum-espresso'
-    version: '6.7'
+    version: '6.6'
     variants:
       - '+epw'
       - 'hdf5=parallel'
