@@ -78,6 +78,6 @@ packages:
       - 'hdf5=parallel'
       - '+mpi'
       - '+scalapack'
-   - name: 'cuda'
-     version: '11.0.2'
+  - name: 'cuda'
+    version: '11.0.2'
      
