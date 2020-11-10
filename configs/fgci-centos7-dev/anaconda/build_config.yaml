@@ -106,7 +106,7 @@ environments:
     version: '2020-01'
     miniconda: False
     python_version: 3
-    installer_version: 'latest'
+    installer_version: '2020.02'
     condarc:
       channels:
         - defaults
