@@ -378,7 +378,6 @@ collections:
       - spyder
       - statsmodels
       - sympy
-      - tensorflow-gpu
       - torchvision
       - vispy
       - wxpython
