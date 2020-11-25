@@ -103,10 +103,10 @@ environments:
       - tensorflow-v2
       - triton-generic
   - name: neuroimaging
-    version: 'latest'
+    version: '2020-01'
     miniconda: True
     python_version: 3
-    installer_version: '2020.02'
+    installer_version: 'latest'
     condarc:
       channels:
         - defaults
