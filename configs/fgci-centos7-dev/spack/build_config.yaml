@@ -307,3 +307,5 @@ packages:
     variants:
       - '+hdf5'
       - '+ncmpi'
+  - name: 'pigz':
+    version: '2.4'
