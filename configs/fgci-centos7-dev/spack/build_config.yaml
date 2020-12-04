@@ -309,3 +309,5 @@ packages:
       - '+ncmpi'
   - name: 'pigz'
     version: '2.4'
+  - name: 'fzf'
+    version: '0.17.5'
