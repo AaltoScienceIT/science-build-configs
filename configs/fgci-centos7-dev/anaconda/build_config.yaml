@@ -90,6 +90,24 @@ environments:
     miniconda: True
     python_version: 3
     installer_version: 'py37_4.8.2'
+    freeze: True
+    condarc:
+      channels:
+        - pytorch
+        - defaults
+        - gurobi
+        - IBMDecisionOptimization
+        - mosek
+        - rapidsai
+        - conda-forge
+    collections:
+      - tensorflow-v2
+      - triton-generic
+  - name: anaconda
+    version: '2020-05-tf2'
+    miniconda: True
+    python_version: 3
+    installer_version: 'py37_4.8.2'
     condarc:
       channels:
         - pytorch
@@ -303,7 +321,7 @@ collections:
       - python-dateutil
       - python-libarchive-c
       - python-snappy
-      - pytorch=1.5.*
+      - pytorch=1.7.*
       - pytz
       - pyyaml
       - requests
