@@ -240,6 +240,20 @@ packages:
       - '+mpi'
       - '~openmp'
   - name: 'cp2k'
+    version: '7.1'
+    variants:
+      - 'blas=openblas'
+      - '~cuda'
+      - '+mpi'
+      - '+openmp'
+  - name: 'cp2k'
+    version: '7.1'
+    variants:
+      - 'blas=openblas'
+      - '~cuda'
+      - '+mpi'
+      - '~openmp'
+  - name: 'cp2k'
     version: '6.1'
     variants:
       - 'blas=openblas'
