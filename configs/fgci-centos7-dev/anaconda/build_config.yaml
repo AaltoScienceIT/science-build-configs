@@ -120,19 +120,19 @@ environments:
     collections:
       - tensorflow-v2
       - triton-generic
-  - name: neuroimaging
-    version: '2020-01'
-    miniconda: True
-    python_version: 3
-    installer_version: 'latest'
-    condarc:
-      channels:
-        - defaults
-        - pytorch
-        - r
-        - conda-forge
-    collections:
-      - neuroimaging
+#  - name: neuroimaging
+#    version: '2020-01'
+#    miniconda: True
+#    python_version: 3
+#    installer_version: 'latest'
+#    condarc:
+#      channels:
+#        - defaults
+#        - pytorch
+#        - r
+#        - conda-forge
+#    collections:
+#      - neuroimaging
 collections:
   tensorflow-v1:
     conda_packages:
