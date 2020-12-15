@@ -332,5 +332,14 @@ packages:
     version: '0.17.5'
     dependencies:
       - '^git@2.21.0'
+  - name: 'abinit'
+    version: '9.2.2'
+    variants:
+      - '+mpi'
+      - '+openmp'
+      - '+scalapack'
   - name: 'gromacs'
     version: '2019.2'
+    variants:
+      - '+mpi'
+      - '+openmp'
