@@ -167,6 +167,8 @@ packages:
     version: 3.6.1
   - name: 'r'
     version: 3.6.3
+  - name: 'r'
+    version: 4.0.3
   - name: 'r-irkernel'
     version: '1.1'
   - name: 'r-tidyverse'
