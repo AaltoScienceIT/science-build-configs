@@ -333,7 +333,7 @@ packages:
     dependencies:
       - '^git@2.21.0'
   - name: 'abinit'
-    version: '9.2.2'
+    version: '8.10.3'
     variants:
       - '+mpi'
       - '+openmp'
