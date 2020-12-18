@@ -343,3 +343,5 @@ packages:
     variants:
       - '+mpi'
       - '+openmp'
+  - name: 'parallel'
+    version: '20190222'
