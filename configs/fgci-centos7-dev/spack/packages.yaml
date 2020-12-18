@@ -16,6 +16,8 @@ packages:
     variants: +expat +ghostscript +gtkplus +gts +java +libgd +pangocairo +qt
   hdf5:
     variants: +cxx +fortran +hl +pic +shared +szip +threadsafe
+  intel-parallel-studio:
+    variants: auto_dispatch=CORE-AVX-I,CORE-AVX2,COMMON-AVX512
   latte:
     variants: +progress
   llvm:
