@@ -309,3 +309,9 @@ packages:
     version: '0.17.5'
     dependencies:
       - '^git@2.21.0'
+  - name: 'abinit'
+    version: '8.10.3'
+    variants:
+      - '+mpi'
+      - '+openmp'
+      - '+scalapack'
