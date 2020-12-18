@@ -127,3 +127,9 @@ packages:
     version: 2019.3.2
   - name: 'valgrind'
     version: 3.15.0
+  - name: 'abinit'
+    version: '8.10.3'
+    variants:
+      - '+mpi'
+      - '+openmp'
+      - '+scalapack'
