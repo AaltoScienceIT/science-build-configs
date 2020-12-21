@@ -228,21 +228,20 @@ packages:
   - name: 'cp2k'
     version: '6.1'
     variants:
-      - 'blas=openblas'
       - '~cuda'
       - '+mpi'
       - '+openmp'
+#      - 'blas=openblas'
   - name: 'cp2k'
     version: '6.1'
     variants:
-      - 'blas=openblas'
       - '~cuda'
       - '+mpi'
       - '~openmp'
+#      - 'blas=openblas'
   - name: 'cp2k'
     version: '6.1'
     variants:
-      - 'blas=openblas'
       - '+cuda'
       - '+mpi'
       - '+openmp'
@@ -250,6 +249,7 @@ packages:
       - '+cuda_fft'
       - 'cuda_arch=37'
       - '%gcc@6.5.0'
+#      - 'blas=openblas'
   - name: 'cp2k'
     version: '6.1'
     variants:
