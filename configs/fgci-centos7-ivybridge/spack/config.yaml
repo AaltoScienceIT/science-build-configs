@@ -1,9 +1,9 @@
 config:
-  install_tree: /share/apps/spack/envs/fgci-centos7-avx/software
+  install_tree: /share/apps/spack/envs/fgci-centos7-ivybridge/software
   install_path_scheme: '${PACKAGE}/${VERSION}/${HASH:7}'
   module_roots:
-    tcl: /share/apps/spack/envs/fgci-centos7-avx/modules
-    lmod: /share/apps/spack/envs/fgci-centos7-avx/lmod
+    tcl: /share/apps/spack/envs/fgci-centos7-ivybridge/modules
+    lmod: /share/apps/spack/envs/fgci-centos7-ivybridge/lmod
   source_cache: /cache/spack
   misc_cache: /tmp/spack_misc_cache
   build_stage:
