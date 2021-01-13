@@ -9,7 +9,7 @@ packages:
     version: [9.3.0]
     variants: +piclibs
   go:
-    version: [1.15.1]
+    version: [1.15.6]
   graphviz:
     variants: +expat +ghostscript +gtkplus +gts +java +libgd +pangocairo +qt
   hdf5:
@@ -28,8 +28,8 @@ packages:
   netcdf-c:
     version: [4.7.4]
   openblas:
-    version: [0.3.10]
-    variants: +virtual_machine threads=pthreads +pic
+    version: [0.3.13]
+    variants: +virtual_machine threads=openmp +pic
   openmpi:
     version: [4.0.5]
     variants: fabrics=verbs +pmi +thread_multiple schedulers=slurm +legacylaunchers
@@ -43,14 +43,14 @@ packages:
   pcre:
     variants: +jit +utf
   python:
-    version: [3.8.5]
-    variants: +pic +shared +optimizations +uuid
+    version: [3.8.7]
+    variants: +pic +shared +optimizations +uuid +pythoncmd
   qmd-progress:
     variants: +graphlib
   qt:
     variants: +phonon +dbus +opengl +webkit
   r:
-    version: [4.0.2]
+    version: [4.0.3]
     variants: +X +external-lapack
   slurm:
     externals:
@@ -58,7 +58,7 @@ packages:
         prefix: /usr
     buildable: False
   sqlite:
-    version: [3.33.0]
+    version: [3.34.0]
     variants: +column_metadata +fts +functions +rtree
   all:
     compiler: [gcc, intel, pgi, clang, xl, nag]
