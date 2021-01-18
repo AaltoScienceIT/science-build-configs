@@ -1,7 +1,7 @@
 - method: rsync
   target_host: triton
-  source: /share/apps/spack/envs/fgci-centos7-ivybridge-dev
-  dest: /share/apps/spack/envs/fgci-centos7-ivybridge-dev
+  source: /share/apps/spack/envs/fgci-centos7-haswell-dev
+  dest: /share/apps/spack/envs/fgci-centos7-haswell-dev
   rsync_flags: -surlptDxv
   chmod_options: 'Dg+s,ug+w,Fo-w,+X'
   delete: false
