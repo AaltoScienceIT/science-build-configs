@@ -52,6 +52,7 @@ modules:
         '^cuda'          : 'cuda'
         '^libpng@1.2.0:1.2.99' : 'libpng-1.2'
         '^openmpi'       : 'openmpi'
+        '^openmpi fabrics=ucx' : 'openmpi-ucx'
         '^scalapack'     : 'scalapack'
         '+qt'            : 'qt'
         '+opengl2'       : 'opengl2'
