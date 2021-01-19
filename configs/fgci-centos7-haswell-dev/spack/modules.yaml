@@ -25,6 +25,8 @@ modules:
     '':
       - CMAKE_PREFIX_PATH
   lmod:
+    hierarchy:
+      - 'mpi'
     whitelist:
       - 'gcc'
       - 'paraview'
