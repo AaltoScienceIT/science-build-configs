@@ -3,6 +3,8 @@ packages:
     variants: +X +gobject +pdf
   curl:
     variants: +libssh2 ~nghttp
+  fftw:
+    variants: +openmp
   fontconfig:
     version: [2.13.1]
   gcc:
