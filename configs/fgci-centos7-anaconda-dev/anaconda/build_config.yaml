@@ -5,7 +5,7 @@ environments:
     version: '4.9.2'
     miniconda: True
     python_version: 3
-    installer_version: '4.9.2'
+    installer_version: 'py37_4.9.2'
     condarc:
       channels:
         - defaults
