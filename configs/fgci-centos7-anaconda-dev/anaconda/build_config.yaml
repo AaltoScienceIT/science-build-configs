@@ -10,7 +10,7 @@ environments:
       channels:
         - defaults
   - name: anaconda
-    version: '2020-06-tf2'
+    version: '2021-01-tf2'
     miniconda: True
     python_version: 3
     installer_version: 'py37_4.9.2'
