@@ -91,7 +91,7 @@ collections:
       - cryptography
       - cryptography-vectors
       - cuda100
-      - cudatoolkit
+      - cudatoolkit=10.2.*
       - cudf
       - cudnn
       - cugraph
