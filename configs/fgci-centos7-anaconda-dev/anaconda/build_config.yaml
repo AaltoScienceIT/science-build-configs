@@ -1,11 +1,12 @@
 installer_checksums:
   Miniconda3-py37_4.9.2-Linux-x86_64.sh: '79510c6e7bd9e012856e25dcb21b3e093aa4ac8113d9aa7e82a86987eabe1c31'
+  Miniconda3-py38_4.9.2-Linux-x86_64.sh: '1314b90489f154602fd794accfc90446111514a5a72fe1f71ab83e07de9504a7'
 environments:
   - name: miniconda
     version: '4.9.2'
     miniconda: True
     python_version: 3
-    installer_version: 'py37_4.9.2'
+    installer_version: 'py38_4.9.2'
     condarc:
       channels:
         - defaults
@@ -13,7 +14,7 @@ environments:
     version: '2021-01-tf2'
     miniconda: True
     python_version: 3
-    installer_version: 'py37_4.9.2'
+    installer_version: 'py38_4.9.2'
     condarc:
       channels:
         - pytorch
@@ -57,204 +58,301 @@ collections:
       - roboschool
       - snakemake
     conda_packages:
-      - appdirs
-      - asn1crypto
-      - astor
-      - astropy
-      - atomicwrites
-      - astunparse
-      - backports
-      - bcolz
-      - bcrypt
-      - beautifulsoup4
-      - bitarray
-      - bkcharts
-      - blaze
-      - blinker
-      - bokeh
-      - boto
-      - bottleneck
-      - cachetools
-      - cairo
-      - cffi
-      - chardet
-      - cloudpickle #=1.3.* # For pip package gym to install
-      - clyent
-      - colorama
-      - conda
-      - conda-env
-      - conda-tree
-      - configargparse
-      - contextlib2
-      - coverage
-      - cplex
-      - cryptography
-      - cryptography-vectors
-      - cuda100
-      - cudatoolkit=10.2.*
-      - cudf
-      - cudnn
-      - cugraph
-      - cuml
-      - cupy
-      - cusignal
-      - cuspatial
-      - cuxfilter
-      - cython
-      - dill
-      - distributed
-      - docopt
-      - docutils
-      - fastcache
-      - fastparquet
-      - feather-format
-      - filelock
-      - fribidi
-      - glob2
-      - gmpy2
-      - google-auth-oauthlib
-      - gpy
-      - graphite2
-      - greenlet
-      - gurobi
-      - h5py
-      - harfbuzz
-      - hdf4
-      - hdf5
-      - heapdict
-      - html5lib
-      - importnb
-      - ipdb
-      - ipykernel
-      - ipyparallel
-      - ipython
-      - ipywidgets
-      - jbig
-      - jdcal
-      - joblib
-      - jupyter
-      - jupyter_contrib_nbextensions
-      - jupyterlab
-      - jupyterlab_server
-      - jupytext
-      - keras
-      - keyring
-      - llvmlite
-      - lxml
-      - markdown
-      - matplotlib
-      - metakernel
-      - mkl
-      - mkl-service
-      - mkl_fft
-      - mkl_random
-      - mne
-      - mock
-      - more-itertools
-      - mosek
-      - mpi4py
-      - mpich
-      - nbconvert
-      - nbdime
-      - nbstripout
-      - nbval
-      - nccl
-      - networkx
-      - nitime
-      - nltk
-      - nose
-      - numba
-      - numexpr
-      - numpy
-      - numpydoc
-      - oauthlib
-      - olefile
-      - openmp
-      - openpyxl
-      - pandas
-      - pandoc
-      - pango
-      - parquet-cpp
-      - partd
-      - patchelf
-      - path
-      - path.py
-      - pathlib2
-      - pbr
-      - pep8
-      - phonopy
-      - pillow
-      - pip
-      - pipdeptree
-      - pixman
-      - pkginfo
-      - plotly
-      - ply
-      - prometheus_client
-      - protobuf
-      - py-lief
-      - pyarrow
-      - pybind11
-      - pycodestyle
-      - pycrypto
-      - pycurl
-      - pydicom
-      - pyflakes
-      - pygments
-      - pygpu
-      - pyjwt
-      - pylint
-      - pympler
-      - pyopenssl
-      - pyparsing
-      - pysocks
-      - pytables
-      - pytest
-      - pytest-arraydiff
-      - pytest-astropy
-      - pytest-doctestplus
-      - pytest-openfiles
-      - pytest-remotedata
-      - python=3.7.*
-      - python-dateutil
-      - python-libarchive-c
-      - python-snappy
-      - pytorch=1.7.*
-      - pytz
-      - pyyaml
-      - requests
-      - requests-oauthlib
-      - ripgrep
-      - rsa
-      - scikit-image
-      - scikit-learn
-      - seaborn
-      - setuptools
-      - sh
-      - simplegeneric
-      - singledispatch
-      - six
-      - sortedcollections
-      - sphinx
-      - sphinxcontrib
-      - sphinxcontrib-websupport
-      - sphinx_rtd_theme
-      - spyder
-      - sqlalchemy
-      - sqlite
-      - statsmodels
-      - sympy
-      - theano
-      - thrift
-      - torchvision
-      - twisted
-      - typing
-      - unicodecsv
-      - unixodbc
-      - vtk
-      - wheel
-      - xgboost
-      - xlrd
-      - xlsxwriter
-      - xlwt
-      - xmltodict
+     - contextlib2
+     - cplex
+     - cudatoolkit=10.2.*
+     - bottleneck
+     - asn1crypto
+     - astor
+     - astropy
+     - cusignal
+     - clyent
+     - cython
+     - backports
+     - bcolz
+     - beautifulsoup4
+     - boto
+     - glob2
+     - conda-env
+     - bitarray
+     - bkcharts
+     - dill
+     - blaze
+     - conda-tree
+     - configargparse
+     - cryptography-vectors
+     - docopt
+     - fastparquet
+     - feather-format
+     - filelock
+     - html5lib
+     - gpy
+     - importnb
+     - greenlet
+     - iniconfig
+     - jbig
+     - gurobi
+     - ipdb
+     - jupyter
+     - jupyter_contrib_nbextensions
+     - nltk
+     - jupyterlab
+     - jupytext
+     - mosek
+     - keras
+     - metakernel
+     - pango
+     - mne
+     - more-itertools
+     - parquet-cpp
+     - mpi4py
+     - pipdeptree
+     - pkginfo
+     - plotly
+     - nbdime
+     - ply
+     - nbstripout
+     - patchelf
+     - nbval
+     - path.py
+     - pathlib2
+     - pbr
+     - nitime
+     - nose
+     - pep8
+     - phonopy
+     - py
+     - openmp
+     - py-lief
+     - openpyxl
+     - pybind11
+     - pycrypto
+     - pycurl
+     - seaborn
+     - sh
+     - simplegeneric
+     - singledispatch
+     - pympler
+     - pytest-astropy
+     - ripgrep
+     - python=3.8.*
+     - python-libarchive-c
+     - scikit-image
+     - python-snappy
+     - sortedcollections
+     - sphinx_rtd_theme
+     - sphinxcontrib-websupport
+     - spyder
+     - unicodecsv
+     - unixodbc
+     - sympy
+     - xlsxwriter
+     - xlwt
+     - twisted
+     - typing
+     - tensorflow-gpu
+     - xmltodict
+     - theano
+     - torchvision
+     - xgboost
+     #      - appdirs
+     #      - asn1crypto
+     #      - astor
+     #      - astropy
+     #      - atomicwrites
+     #      - astunparse
+     #      - backports
+     #      - bcolz
+     #      - bcrypt
+     #      - beautifulsoup4
+     #      - bitarray
+     #      - bkcharts
+     #      - blaze
+     #      - blinker
+     #      - bokeh
+     #      - boto
+     #      - bottleneck
+     #      - cachetools
+     #      - cairo
+     #      - cffi
+     #      - chardet
+     #      - cloudpickle #=1.3.* # For pip package gym to install
+     #      - clyent
+     #      - colorama
+     #      - conda
+     #      - conda-env
+     #      - conda-tree
+     #      - configargparse
+     #      - contextlib2
+     #      - coverage
+     #      - cplex
+     #      - cryptography
+     #      - cryptography-vectors
+     #      - cuda100
+     #      - cudatoolkit=10.2.*
+     #      - cudf
+     #      - cudnn
+     #      - cugraph
+     #      - cuml
+     #      - cupy
+     #      - cusignal
+     #      - cuspatial
+     #      - cuxfilter
+     #      - cython
+     #      - dill
+     #      - distributed
+     #      - docopt
+     #      - docutils
+     #      - fastcache
+     #      - fastparquet
+     #      - feather-format
+     #      - filelock
+     #      - fribidi
+     #      - glob2
+     #      - gmpy2
+     #      - google-auth-oauthlib
+     #      - gpy
+     #      - graphite2
+     #      - greenlet
+     #      - gurobi
+     #      - h5py
+     #      - harfbuzz
+     #      - hdf4
+     #      - hdf5
+     #      - heapdict
+     #      - html5lib
+     #      - importnb
+     #      - ipdb
+     #      - ipykernel
+     #      - ipyparallel
+     #      - ipython
+     #      - ipywidgets
+     #      - jbig
+     #      - jdcal
+     #      - joblib
+     #      - jupyter
+     #      - jupyter_contrib_nbextensions
+     #      - jupyterlab
+     #      - jupyterlab_server
+     #      - jupytext
+     #      - keras
+     #      - keyring
+     #      - llvmlite
+     #      - lxml
+     #      - markdown
+     #      - matplotlib
+     #      - metakernel
+     #      - mkl
+     #      - mkl-service
+     #      - mkl_fft
+     #      - mkl_random
+     #      - mne
+     #      - mock
+     #      - more-itertools
+     #      - mosek
+     #      - mpi4py
+     #      - mpich
+     #      - nbconvert
+     #      - nbdime
+     #      - nbstripout
+     #      - nbval
+     #      - nccl
+     #      - networkx
+     #      - nitime
+     #      - nltk
+     #      - nose
+     #      - numba
+     #      - numexpr
+     #      - numpy
+     #      - numpydoc
+     #      - oauthlib
+     #      - olefile
+     #      - openmp
+     #      - openpyxl
+     #      - pandas
+     #      - pandoc
+     #      - pango
+     #      - parquet-cpp
+     #      - partd
+     #      - patchelf
+     #      - path
+     #      - path.py
+     #      - pathlib2
+     #      - pbr
+     #      - pep8
+     #      - phonopy
+     #      - pillow
+     #      - pip
+     #      - pipdeptree
+     #      - pixman
+     #      - pkginfo
+     #      - plotly
+     #      - ply
+     #      - prometheus_client
+     #      - protobuf
+     #      - py-lief
+     #      - pyarrow
+     #      - pybind11
+     #      - pycodestyle
+     #      - pycrypto
+     #      - pycurl
+     #      - pydicom
+     #      - pyflakes
+     #      - pygments
+     #      - pygpu
+     #      - pyjwt
+     #      - pylint
+     #      - pympler
+     #      - pyopenssl
+     #      - pyparsing
+     #      - pysocks
+     #      - pytables
+     #      - pytest
+     #      - pytest-arraydiff
+     #      - pytest-astropy
+     #      - pytest-doctestplus
+     #      - pytest-openfiles
+     #      - pytest-remotedata
+     #      - python=3.7.*
+     #      - python-dateutil
+     #      - python-libarchive-c
+     #      - python-snappy
+     #      - pytorch=1.7.*
+     #      - pytz
+     #      - pyyaml
+     #      - requests
+     #      - requests-oauthlib
+     #      - ripgrep
+     #      - rsa
+     #      - scikit-image
+     #      - scikit-learn
+     #      - seaborn
+     #      - setuptools
+     #      - sh
+     #      - simplegeneric
+     #      - singledispatch
+     #      - six
+     #      - sortedcollections
+     #      - sphinx
+     #      - sphinxcontrib
+     #      - sphinxcontrib-websupport
+     #      - sphinx_rtd_theme
+     #      - spyder
+     #      - sqlalchemy
+     #      - sqlite
+     #      - statsmodels
+     #      - sympy
+     #      - theano
+     #      - thrift
+     #      - torchvision
+     #      - twisted
+     #      - typing
+     #      - unicodecsv
+     #      - unixodbc
+     #      - vtk
+     #      - wheel
+     #      - xgboost
+     #      - xlrd
+     #      - xlsxwriter
+     #      - xlwt
+     #      - xmltodict
