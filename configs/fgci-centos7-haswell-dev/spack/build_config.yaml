@@ -71,13 +71,13 @@ compilers:
       os: centos7
       arch: x86_64
 packages:
-#  - name: 'quantum-espresso'
-#    version: '6.6'
-#    variants:
-#      - '+epw'
-#      - 'hdf5=parallel'
-#      - '+mpi'
-#      - '+scalapack'
+  - name: 'quantum-espresso'
+    version: '6.6'
+    variants:
+      - '+epw'
+      - 'hdf5=parallel'
+      - '+mpi'
+      - '+scalapack'
   - name: 'cuda'
     version: '11.0.2'
   - name: 'abinit'
