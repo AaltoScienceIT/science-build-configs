@@ -71,7 +71,7 @@ collections:
      - configargparse
      - contextlib2
      - cplex
-     - cudatoolkit=10.2.*
+     - cudatoolkit=10.1.*
      - cusignal
      - cython
      - dill
