@@ -58,103 +58,95 @@ collections:
       - roboschool
       - snakemake
     conda_packages:
+     - astropy
+     - bcolz
+     - beautifulsoup4
+     - bitarray
+     - bkcharts
+     - blaze
+     - boto
+     - bottleneck
+     - clyent
+     - conda-tree
+     - configargparse
      - contextlib2
      - cplex
      - cudatoolkit=10.2.*
-     - bottleneck
-     - asn1crypto
-     - astor
-     - astropy
      - cusignal
-     - clyent
      - cython
-     - backports
-     - bcolz
-     - beautifulsoup4
-     - boto
-     - glob2
-     - conda-env
-     - bitarray
-     - bkcharts
      - dill
-     - blaze
-     - conda-tree
-     - configargparse
-     - cryptography-vectors
      - docopt
-     - fastparquet
-     - feather-format
      - filelock
-     - html5lib
+     - glob2
      - gpy
-     - importnb
      - greenlet
-     - iniconfig
-     - jbig
      - gurobi
+     - html5lib
+     - importnb
+     - iniconfig
      - ipdb
+     - jbig
      - jupyter
      - jupyter_contrib_nbextensions
-     - nltk
      - jupyterlab
      - jupytext
-     - mosek
      - keras
      - metakernel
-     - pango
      - mne
      - more-itertools
-     - parquet-cpp
+     - mosek
      - mpi4py
-     - pipdeptree
-     - pkginfo
-     - plotly
      - nbdime
-     - ply
      - nbstripout
-     - patchelf
      - nbval
+     - nitime
+     - nltk
+     - nose
+     - openmp
+     - openpyxl
+     - pango
+     - patchelf
      - path.py
      - pathlib2
      - pbr
-     - nitime
-     - nose
      - pep8
      - phonopy
+     - pipdeptree
+     - pkginfo
+     - plotly
+     - ply
      - py
-     - openmp
      - py-lief
-     - openpyxl
+     - pyarrow
      - pybind11
      - pycrypto
      - pycurl
+     - pympler
+     - pytest-astropy
+     - python-libarchive-c
+     - python-snappy
+     - python=3.8.*
+     - pytorch=1.7.*
+     - ripgrep
+     - scikit-image
      - seaborn
      - sh
      - simplegeneric
      - singledispatch
-     - pympler
-     - pytest-astropy
-     - ripgrep
-     - python=3.8.*
-     - python-libarchive-c
-     - scikit-image
-     - python-snappy
      - sortedcollections
      - sphinx_rtd_theme
      - sphinxcontrib-websupport
      - spyder
-     - unicodecsv
-     - unixodbc
      - sympy
-     - xlsxwriter
-     - xlwt
+     - theano
      - twisted
      - typing
-     - tensorflow-gpu
-     - xmltodict
-     - theano
-     - torchvision
+     - unicodecsv
+     - unixodbc
      - xgboost
+     - xlsxwriter
+     - xlwt
+     - xmltodict
      #      - appdirs
      #      - asn1crypto
      #      - astor
