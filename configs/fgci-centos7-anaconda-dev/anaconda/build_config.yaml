@@ -59,94 +59,94 @@ collections:
       - snakemake
     conda_packages:
      - astropy
-     - bcolz
-     - beautifulsoup4
-     - bitarray
-     - bkcharts
-     - blaze
-     - boto
-     - bottleneck
-     - clyent
+       #- bcolz
+       #- beautifulsoup4
+       #- bitarray
+       # bkcharts
+       # blaze
+       # boto
+       # bottleneck
+       # clyent
      - conda-tree
-     - configargparse
-     - contextlib2
+       # configargparse
+       # contextlib2
      - cplex
      - cudatoolkit=10.1.*
      - cusignal
      - cython
-     - dill
-     - docopt
-     - filelock
-     - glob2
-     - gpy
-     - greenlet
+       #- dill
+       #- docopt
+       #- filelock
+       #- glob2
+       #- gpy
+       #- greenlet
      - gurobi
-     - html5lib
-     - importnb
-     - iniconfig
-     - ipdb
-     - jbig
+       #- html5lib
+       #- importnb
+       #- iniconfig
+       #- ipdb
+       #- jbig
      - jupyter
      - jupyter_contrib_nbextensions
      - jupyterlab
      - jupytext
      - keras
-     - metakernel
+       #- metakernel
      - mne
-     - more-itertools
+       # more-itertools
      - mosek
      - mpi4py
-     - nbdime
-     - nbstripout
-     - nbval
-     - nitime
+       #- nbdime
+       #- nbstripout
+       #- nbval
+       #- nitime
      - nltk
-     - nose
-     - openmp
-     - openpyxl
-     - pango
-     - patchelf
-     - path.py
-     - pathlib2
-     - pbr
-     - pep8
-     - phonopy
-     - pipdeptree
-     - pkginfo
+       #- nose
+       #- openmp
+       #- openpyxl
+       #- pango
+       #- patchelf
+       #- path.py
+       #- pathlib2
+       #- pbr
+       #- pep8
+       #- phonopy
+       #- pipdeptree
+       #- pkginfo
      - plotly
-     - ply
-     - py
-     - py-lief
+       #- ply
+       #- py
+       #- py-lief
      - pyarrow
-     - pybind11
-     - pycrypto
-     - pycurl
-     - pympler
+       #- pybind11
+       #- pycrypto
+       #- pycurl
+       #- pympler
      - pytest-astropy
      - python-libarchive-c
      - python-snappy
      - python=3.8.*
      - pytorch=1.7.*
-     - ripgrep
+       #- ripgrep
      - scikit-image
      - seaborn
      - sh
-     - simplegeneric
-     - singledispatch
-     - sortedcollections
+       #- simplegeneric
+       #- singledispatch
+       #- sortedcollections
      - sphinx_rtd_theme
      - sphinxcontrib-websupport
      - spyder
      - sympy
      - theano
-     - twisted
-     - typing
-     - unicodecsv
-     - unixodbc
-     - xgboost
+       #- twisted
+       #- typing
+       #- unicodecsv
+       #- unixodbc
+       #- xgboost
      - xlsxwriter
-     - xlwt
-     - xmltodict
+       #- xlwt
+       # - xmltodict
      #      - appdirs
      #      - asn1crypto
      #      - astor
