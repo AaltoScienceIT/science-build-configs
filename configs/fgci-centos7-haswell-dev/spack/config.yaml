@@ -1,6 +1,8 @@
 config:
-  install_tree: /share/apps/spack/envs/fgci-centos7-haswell-dev/software
-  install_path_scheme: '${PACKAGE}/${VERSION}/${HASH:7}'
+  install_tree:
+    projections:
+      all: ${PACKAGE}/${VERSION}/${HASH:7}
+    root: /share/apps/spack/envs/fgci-centos7-haswell-dev/software
   module_roots:
     tcl: /share/apps/spack/envs/fgci-centos7-haswell-dev/modules
     lmod: /share/apps/spack/envs/fgci-centos7-haswell-dev/lmod
