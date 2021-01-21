@@ -88,3 +88,7 @@ packages:
       - '+scalapack'
     dependencies:
       - '%gcc@6.5.0'
+  - name: 'llvm'
+    version: 11.0.1
+    extra_flags:
+      - '-j 1'
