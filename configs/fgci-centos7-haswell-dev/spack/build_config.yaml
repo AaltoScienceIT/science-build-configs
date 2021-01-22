@@ -71,15 +71,6 @@ compilers:
       os: centos7
       arch: x86_64
 packages:
-  - name: 'quantum-espresso'
-    version: '6.6'
-    variants:
-      - '+epw'
-      - 'hdf5=parallel'
-      - '+mpi'
-      - '+scalapack'
-  - name: 'cuda'
-    version: '11.0.2'
   - name: 'abinit'
     version: '8.10.3'
     variants:
@@ -88,7 +79,18 @@ packages:
       - '+scalapack'
     dependencies:
       - '%gcc@6.5.0'
+  - name: 'cuda'
+    version: '11.0.2'
+  - name: 'julia'
+    version: '1.5.3'
   - name: 'llvm'
     version: 11.0.1
     extra_flags:
       - '-j 1'
+  - name: 'quantum-espresso'
+    version: '6.6'
+    variants:
+      - '+epw'
+      - 'hdf5=parallel'
+      - '+mpi'
+      - '+scalapack'
