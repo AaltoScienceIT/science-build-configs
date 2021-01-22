@@ -87,6 +87,8 @@ packages:
       - '-j 1'
   - name: 'llvm'
     version: 11.0.1
+    variants:
+      - '+blas'
     extra_flags:
       - '-j 1'
   - name: 'quantum-espresso'
