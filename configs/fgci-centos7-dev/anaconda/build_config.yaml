@@ -120,19 +120,16 @@ environments:
     collections:
       - tensorflow-v2
       - triton-generic
-#  - name: neuroimaging
-#    version: '2020-01'
-#    miniconda: True
-#    python_version: 3
-#    installer_version: 'latest'
-#    condarc:
-#      channels:
-#        - defaults
-#        - pytorch
-#        - r
-#        - conda-forge
-#    collections:
-#      - neuroimaging
+  - name: neuroimaging
+    version: '2021-01'
+    miniconda: True
+    python_version: 3
+    installer_version: 'latest'
+    condarc:
+      channels:
+        - defaults
+    collections:
+      - neuroimaging
 collections:
   tensorflow-v1:
     conda_packages:
@@ -363,95 +360,50 @@ collections:
   neuroimaging:
     conda_packages:
       - python>=3.8
-      - captum
-      - conda-tree
-      - configobj
-      - cupy
-      - cython
-      - gensim
-      - gevent
-      - jupyter
-      - lxml
-      - memory_profiler
-      - msgpack-python
-      - nose
-      - numba
-      - openpyxl
-      - opencv
       - pip
-      - plotly
-      - pycairo
-      - pyopengl
-      - pyserial
-      - pytables
-      - pytest-cov
-      - r-essentials
-      - r-lme4
-      - r-lmertest
-      - r-tidyverse
-      - rpy2
-      - scikit-learn
-      - seaborn
-      - shapely
-      - spyder
-      - statsmodels
-      - sympy
-      - torchvision
-      - vispy
-      - wxpython
+      - numpy
+      - scipy
+      - matplotlib
+      - numba
+      - pandas
       - xlrd
+      - scikit-learn
+      - h5py
+      - pillow
+      - statsmodels
+      - jupyter
+      - joblib
+      - psutil
+      - numexpr
+      - traits
+      - pyface
+      - traitsui
+      - imageio
+      - tqdm
+      - spyder-kernels>=1.10.0
+      - imageio-ffmpeg>=0.4.1
+      - vtk>=9.0.1
+      - pyvista>=0.24
+      - pyvistaqt>=0.2.0
+      - mayavi
+      - PySurfer
+      - dipy
+      - nibabel
+      - nilearn
+      - python-picard
+      - pyqt
+      - mne
+      - mffpy>=0.5.7
     pip_packages:
       - autoreject
       - bids_validator
       - codespell
-      - cython > 
-      - dipy --only-binary dipy
-      - doit
-      - ipyevents
-      - imageio-ffmpeg>=0.4.1
-      - json-tricks
-      - jupyter_contrib_nbextensions
-      - librosa
-      - mayavi
-      - mne
-      - mne-bids
-      - moviepy
-      - neo
-      - nibabel
-      - nilearn
       - nipy
       - nipype
-      - "https://github.com/nipy/nitime/archive/master.zip"
-      - psychopy
-      - psychopy_ext
-      - pycortex
-      - pydocstyle
-      - pyface
-      - pygame --only-binary pygame
-      - pyglet
-      - pyosf
-      - pyparallel
-      - pysoundcard
-      - pysoundfile
-      - pysurfer[save_movie]
-      - pytest-faulthandler
-      - pytest-sugar
-      - python-bidi
-      - python-picard
-      - pythreejs
-      - pyvista>=0.24
-      - pyvistaqt>=0.2.0
-      - rise
-      - sounddevice
-      - spacy
+      - nitime
       - sphinx_bootstrap_theme
       - sphinx_fontawesome
       - sphinx-gallery
-      - traits
-      - traitsui
-      - transformers
-      - vtk>=9.0.1
-      - zmq
       - "https://github.com/AaltoImagingLanguage/conpy/archive/master.zip"
       - "https://github.com/wmvanvliet/posthoc/archive/master.zip"
       - "https://github.com/wmvanvliet/mne_microstates/archive/master.zip"
