@@ -92,10 +92,10 @@ packages:
       - 'cuda_arch=35,60,70'
     extra_flags:
       - '-j 1'
-  - name: 'julia'
-    version: '1.5.2'
-    extra_flags:
-      - '-j 1'
+#  - name: 'julia'
+#    version: '1.5.2'
+#    extra_flags:
+#      - '-j 1'
   - name: 'quantum-espresso'
     version: '6.6'
     variants:
