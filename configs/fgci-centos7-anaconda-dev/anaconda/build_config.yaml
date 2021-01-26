@@ -18,12 +18,13 @@ environments:
     condarc:
       channels:
         - pytorch
+        - rapidsai
         - defaults
+        - conda-forge
+        - nvidia
         - gurobi
         - IBMDecisionOptimization
         - mosek
-        - rapidsai
-        - conda-forge
     collections:
       - tensorflow-v2
       - triton-generic
@@ -70,295 +71,99 @@ collections:
       - snakemake
     conda_packages:
      - astropy
-       #- bcolz
-       #- beautifulsoup4
-       #- bitarray
-       # bkcharts
-       # blaze
-       # boto
-       # bottleneck
-       # clyent
+     - bcolz
+     - beautifulsoup4
+     - bitarray
+     - bkcharts
+     # - blaze # No python3.8 build
+     - boto
+     - bottleneck
+     - clyent
      - conda-tree
-       # configargparse
-       # contextlib2
+     - configargparse
+     - contextlib2
      - cplex
      - cudatoolkit=10.1.*
+     - cudf
+     - cuml
+     - cugraph
      - cusignal
+     - cuspatial
+     - cuxfilter
      - cython
-       #- dill
-       #- docopt
-       #- filelock
-       #- glob2
-       #- gpy
-       #- greenlet
+     - dill
+     - docopt
+     - filelock
+     - glob2
+     - gpy
+     - greenlet
      - gurobi
-       #- html5lib
-       #- importnb
-       #- iniconfig
-       #- ipdb
-       #- jbig
+     - html5lib
+     - importnb
+     - iniconfig
+     - ipdb
+     - jbig
      - jupyter
      - jupyter_contrib_nbextensions
      - jupyterlab
      - jupytext
      - keras
-       #- metakernel
+     - metakernel
      - mne
-       # more-itertools
+     - more-itertools
      - mosek
      - mpi4py
-       #- nbdime
-       #- nbstripout
-       #- nbval
-       #- nitime
+     - nbdime
+     - nbstripout
+     - nbval
+     - nitime
      - nltk
-       #- nose
-       #- openmp
-       #- openpyxl
-       #- pango
-       #- patchelf
-       #- path.py
-       #- pathlib2
-       #- pbr
-       #- pep8
-       #- phonopy
-       #- pipdeptree
-       #- pkginfo
+     - nose
+     - openmp
+     - openpyxl
+     - pango
+     - patchelf
+     - path.py
+     - pathlib2
+     - pbr
+     - pep8
+     - phonopy
+     - pipdeptree
+     - pkginfo
      - plotly
-       #- ply
-       #- py
-       #- py-lief
+     - ply
+     - py
+     - py-lief
      - pyarrow
-       #- pybind11
-       #- pycrypto
-       #- pycurl
-       #- pympler
+     - pybind11
+     - pycrypto
+     - pycurl
+     - pympler
      - pytest-astropy
      - python-libarchive-c
      - python-snappy
      - python=3.8.*
      - pytorch=1.7.*
-       #- ripgrep
+     - ripgrep
      - scikit-image
      - seaborn
      - sh
-       #- simplegeneric
-       #- singledispatch
-       #- sortedcollections
+     - simplegeneric
+     - singledispatch
+     - sortedcollections
      - sphinx_rtd_theme
      - sphinxcontrib-websupport
      - spyder
      - sympy
      - theano
-       #- twisted
-       #- typing
-       #- unicodecsv
-       #- unixodbc
-       #- xgboost
+     - twisted
+     - typing
+     - unicodecsv
+     - unixodbc
+     - xgboost
      - xlsxwriter
-       #- xlwt
-       # - xmltodict
-     #      - appdirs
-     #      - asn1crypto
-     #      - astor
-     #      - astropy
-     #      - atomicwrites
-     #      - astunparse
-     #      - backports
-     #      - bcolz
-     #      - bcrypt
-     #      - beautifulsoup4
-     #      - bitarray
-     #      - bkcharts
-     #      - blaze
-     #      - blinker
-     #      - bokeh
-     #      - boto
-     #      - bottleneck
-     #      - cachetools
-     #      - cairo
-     #      - cffi
-     #      - chardet
-     #      - cloudpickle #=1.3.* # For pip package gym to install
-     #      - clyent
-     #      - colorama
-     #      - conda
-     #      - conda-env
-     #      - conda-tree
-     #      - configargparse
-     #      - contextlib2
-     #      - coverage
-     #      - cplex
-     #      - cryptography
-     #      - cryptography-vectors
-     #      - cuda100
-     #      - cudatoolkit=10.2.*
-     #      - cudf
-     #      - cudnn
-     #      - cugraph
-     #      - cuml
-     #      - cupy
-     #      - cusignal
-     #      - cuspatial
-     #      - cuxfilter
-     #      - cython
-     #      - dill
-     #      - distributed
-     #      - docopt
-     #      - docutils
-     #      - fastcache
-     #      - fastparquet
-     #      - feather-format
-     #      - filelock
-     #      - fribidi
-     #      - glob2
-     #      - gmpy2
-     #      - google-auth-oauthlib
-     #      - gpy
-     #      - graphite2
-     #      - greenlet
-     #      - gurobi
-     #      - h5py
-     #      - harfbuzz
-     #      - hdf4
-     #      - hdf5
-     #      - heapdict
-     #      - html5lib
-     #      - importnb
-     #      - ipdb
-     #      - ipykernel
-     #      - ipyparallel
-     #      - ipython
-     #      - ipywidgets
-     #      - jbig
-     #      - jdcal
-     #      - joblib
-     #      - jupyter
-     #      - jupyter_contrib_nbextensions
-     #      - jupyterlab
-     #      - jupyterlab_server
-     #      - jupytext
-     #      - keras
-     #      - keyring
-     #      - llvmlite
-     #      - lxml
-     #      - markdown
-     #      - matplotlib
-     #      - metakernel
-     #      - mkl
-     #      - mkl-service
-     #      - mkl_fft
-     #      - mkl_random
-     #      - mne
-     #      - mock
-     #      - more-itertools
-     #      - mosek
-     #      - mpi4py
-     #      - mpich
-     #      - nbconvert
-     #      - nbdime
-     #      - nbstripout
-     #      - nbval
-     #      - nccl
-     #      - networkx
-     #      - nitime
-     #      - nltk
-     #      - nose
-     #      - numba
-     #      - numexpr
-     #      - numpy
-     #      - numpydoc
-     #      - oauthlib
-     #      - olefile
-     #      - openmp
-     #      - openpyxl
-     #      - pandas
-     #      - pandoc
-     #      - pango
-     #      - parquet-cpp
-     #      - partd
-     #      - patchelf
-     #      - path
-     #      - path.py
-     #      - pathlib2
-     #      - pbr
-     #      - pep8
-     #      - phonopy
-     #      - pillow
-     #      - pip
-     #      - pipdeptree
-     #      - pixman
-     #      - pkginfo
-     #      - plotly
-     #      - ply
-     #      - prometheus_client
-     #      - protobuf
-     #      - py-lief
-     #      - pyarrow
-     #      - pybind11
-     #      - pycodestyle
-     #      - pycrypto
-     #      - pycurl
-     #      - pydicom
-     #      - pyflakes
-     #      - pygments
-     #      - pygpu
-     #      - pyjwt
-     #      - pylint
-     #      - pympler
-     #      - pyopenssl
-     #      - pyparsing
-     #      - pysocks
-     #      - pytables
-     #      - pytest
-     #      - pytest-arraydiff
-     #      - pytest-astropy
-     #      - pytest-doctestplus
-     #      - pytest-openfiles
-     #      - pytest-remotedata
-     #      - python=3.7.*
-     #      - python-dateutil
-     #      - python-libarchive-c
-     #      - python-snappy
-     #      - pytorch=1.7.*
-     #      - pytz
-     #      - pyyaml
-     #      - requests
-     #      - requests-oauthlib
-     #      - ripgrep
-     #      - rsa
-     #      - scikit-image
-     #      - scikit-learn
-     #      - seaborn
-     #      - setuptools
-     #      - sh
-     #      - simplegeneric
-     #      - singledispatch
-     #      - six
-     #      - sortedcollections
-     #      - sphinx
-     #      - sphinxcontrib
-     #      - sphinxcontrib-websupport
-     #      - sphinx_rtd_theme
-     #      - spyder
-     #      - sqlalchemy
-     #      - sqlite
-     #      - statsmodels
-     #      - sympy
-     #      - theano
-     #      - thrift
-     #      - torchvision
-     #      - twisted
-     #      - typing
-     #      - unicodecsv
-     #      - unixodbc
-     #      - vtk
-     #      - wheel
-     #      - xgboost
-     #      - xlrd
-     #      - xlsxwriter
-     #      - xlwt
-     #      - xmltodict
+     - xlwt
+     - xmltodict
   neuroimaging:
     conda_packages:
       - python>=3.8
