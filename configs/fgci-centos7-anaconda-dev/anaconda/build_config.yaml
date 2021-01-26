@@ -10,23 +10,23 @@ environments:
     condarc:
       channels:
         - defaults
-#  - name: anaconda
-#    version: '2021-01-tf2'
-#    miniconda: True
-#    python_version: 3
-#    installer_version: 'py38_4.9.2'
-#    condarc:
-#      channels:
-#        - pytorch
-#        - defaults
-#        - gurobi
-#        - IBMDecisionOptimization
-#        - mosek
-#        - rapidsai
-#        - conda-forge
-#    collections:
-#      - tensorflow-v2
-#      - triton-generic
+  - name: anaconda
+    version: '2021-01-tf2'
+    miniconda: True
+    python_version: 3
+    installer_version: 'py38_4.9.2'
+    condarc:
+      channels:
+        - pytorch
+        - defaults
+        - gurobi
+        - IBMDecisionOptimization
+        - mosek
+        - rapidsai
+        - conda-forge
+    collections:
+      - tensorflow-v2
+      - triton-generic
   - name: neuroimaging
     version: '2021-01'
     miniconda: True
