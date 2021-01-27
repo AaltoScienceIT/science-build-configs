@@ -82,7 +82,7 @@ packages:
   - name: 'cuda'
     version: '11.0.2'
   - name: 'julia'
-    version: '1.5.2'
+    version: '1.5.3'
     extra_flags:
       - '-j 1'
   - name: 'llvm'
