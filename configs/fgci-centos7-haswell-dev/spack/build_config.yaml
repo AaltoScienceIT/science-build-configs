@@ -81,6 +81,10 @@ packages:
       - '%gcc@6.5.0'
   - name: 'cuda'
     version: '11.0.2'
+  - name: 'julia'
+    version: '1.5.2'
+    extra_flags:
+      - '-j 1'
   - name: 'llvm'
     version: 11.0.1
     extra_flags:
@@ -92,10 +96,6 @@ packages:
       - 'cuda_arch=35,60,70'
     extra_flags:
       - '-j 1'
-#  - name: 'julia'
-#    version: '1.5.2'
-#    extra_flags:
-#      - '-j 1'
   - name: 'quantum-espresso'
     version: '6.6'
     variants:
