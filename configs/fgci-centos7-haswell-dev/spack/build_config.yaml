@@ -106,8 +106,4 @@ packages:
   - name: 'hdf5'
     version: 1.10.7
     variants:
-      - '-mpi'
-      - '+fortran'
-      - '+szip'
-      - '+threadsafe'
-      - '+cxx'
+      - '~mpi'
