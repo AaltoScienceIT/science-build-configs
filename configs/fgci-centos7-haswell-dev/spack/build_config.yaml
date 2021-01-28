@@ -96,13 +96,6 @@ packages:
     variants:
       - '+cuda'
       - 'cuda_arch=35,60,70'
-    extra_flags:
-      - '-j 6'
-  - name: 'llvm'
-    version: 11.0.1
-    variants:
-      - '+cuda'
-      - 'cuda_arch=35,60,70'
       - '^cuda@10.1.243%gcc@6.5.0'
     extra_flags:
       - '-j 6'
