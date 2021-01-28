@@ -1,4 +1,6 @@
 packages:
+  boost:
+    variants: +pic
   cairo:
     variants: +X +gobject +pdf
   curl:
