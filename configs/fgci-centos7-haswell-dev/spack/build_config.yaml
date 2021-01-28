@@ -98,6 +98,13 @@ packages:
       - 'cuda_arch=35,60,70'
     extra_flags:
       - '-j 6'
+  - name: 'llvm'
+    version: 11.0.1
+    variants:
+      - '+cuda@10.1.243'
+      - 'cuda_arch=35,60,70'
+    extra_flags:
+      - '-j 6'
   - name: 'quantum-espresso'
     version: '6.6'
     variants:
