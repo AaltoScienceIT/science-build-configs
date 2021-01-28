@@ -201,6 +201,8 @@ collections:
       - pyqt
       - mne
       - mffpy>=0.5.7
+      - doit
+      - spyder
     pip_packages:
       - autoreject
       - bids_validator
