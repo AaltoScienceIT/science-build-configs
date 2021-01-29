@@ -1,4 +1,6 @@
 packages:
+  boost:
+    variants: +pic
   cairo:
     variants: +X +gobject +pdf
   curl:
@@ -8,7 +10,7 @@ packages:
   fontconfig:
     version: [2.13.1]
   gcc:
-    version: [9.3.0]
+    version: [9.3.0, 6.5.0]
     variants: +piclibs
   go:
     version: [1.15.6]
