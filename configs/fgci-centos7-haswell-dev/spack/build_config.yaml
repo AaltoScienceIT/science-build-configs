@@ -97,7 +97,7 @@ packages:
       - '+cuda'
       - 'cuda_arch=35,60,70'
     dependencies:
-      - 'cuda@10.1.243'
+      - '^cuda@10.1.243'
       - '%gcc@6.5.0'
     extra_flags:
       - '-j 6'
