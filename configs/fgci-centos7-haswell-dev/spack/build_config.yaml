@@ -59,7 +59,7 @@ compilers:
     variants:
       - '+mpi'
     dependencies:
-      - '%gcc@9.3.0'
+      - '%gcc@4.8.5'
     flags:
       cflags: -O2 -g -march=haswell
       cxxflags: -O2 -g -march=haswell
@@ -75,7 +75,7 @@ compilers:
     variants:
       - '+mpi'
     dependencies:
-      - '%gcc@9.3.0'
+      - '%gcc@4.8.5'
     flags:
       cflags: -O2 -g -march=haswell
       cxxflags: -O2 -g -march=haswell
