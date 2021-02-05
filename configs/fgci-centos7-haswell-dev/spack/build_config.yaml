@@ -91,6 +91,8 @@ packages:
       - '+mpi'
       - '+openmp'
       - '+scalapack'
+    dependencies:
+      - '%gcc@6.5.0'
   - name: 'cuda'
     version: '10.1.243'
   - name: 'cuda'

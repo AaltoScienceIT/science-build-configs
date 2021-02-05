@@ -65,7 +65,7 @@ packages:
     version: [3.34.0]
     variants: +column_metadata +fts +functions +rtree
   all:
-    compiler: [gcc, intel, pgi, clang, xl, nag]
+    compiler: [gcc@8.4.0, gcc, intel, pgi, clang, xl, nag]
     providers:
       awk: [gawk]
       blas: [openblas]
