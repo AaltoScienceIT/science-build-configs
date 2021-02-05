@@ -91,16 +91,6 @@ packages:
       - '+mpi'
       - '+openmp'
       - '+scalapack'
-    dependencies:
-      - '%gcc@6.5.0'
-  - name: 'abinit'
-    version: '8.10.3'
-    variants:
-      - '+mpi'
-      - '+openmp'
-      - '+scalapack'
-    dependencies:
-      - '%gcc@8.4.0'
   - name: 'cuda'
     version: '10.1.243'
   - name: 'cuda'
@@ -120,17 +110,6 @@ packages:
       - 'cuda_arch=35,60,70'
     dependencies:
       - '^cuda@10.1.243'
-      - '%gcc@6.5.0'
-    extra_flags:
-      - '-j 6'
-  - name: 'llvm'
-    version: 11.0.1
-    variants:
-      - '+cuda'
-      - 'cuda_arch=35,60,70'
-    dependencies:
-      - '^cuda@10.1.243'
-      - '%gcc@8.4.0'
     extra_flags:
       - '-j 6'
   - name: 'quantum-espresso'
