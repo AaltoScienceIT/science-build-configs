@@ -38,38 +38,56 @@ compilers:
       platform: linux
       os: centos7
       arch: x86_64
-  - name: 'intel-parallel-studio'
-    version: 'cluster.2019.3'
-    licenses:
-      - 'license.lic'
+  - name: 'gcc'
+    version: 8.4.0
     variants:
-      - '+mpi'
+      - '+piclibs'
     dependencies:
-      - '%gcc@9.3.0'
+      - '%gcc@4.8.5'
     flags:
-      cflags: -O2 -g -march=haswell
-      cxxflags: -O2 -g -march=haswell
-      fflags: -O2 -g -march=haswell
-    target_architecture:
-      platform: linux
-      os: centos7
-      arch: x86_64
-  - name: 'intel-parallel-studio'
-    version: 'cluster.2020.0'
-    licenses:
-      - 'license.lic'
-    variants:
-      - '+mpi'
-    dependencies:
-      - '%gcc@9.3.0'
-    flags:
-      cflags: -O2 -g -march=haswell
-      cxxflags: -O2 -g -march=haswell
-      fflags: -O2 -g -march=haswell
+      cflags: -O2 -g -march=haswell -ftree-vectorize
+      cxxflags: -O2 -g -march=haswell -ftree-vectorize
+      fflags: -O2 -g -march=haswell -ftree-vectorize
     target_architecture:
       platform: linux
       os: centos7
       arch: x86_64
 packages:
+  - name: 'abinit'
+    version: '8.10.3'
+    variants:
+      - '+mpi'
+      - '+openmp'
+      - '+scalapack'
+  - name: 'cuda'
+    version: '10.1.243'
   - name: 'cuda'
     version: '11.0.2'
+  - name: 'julia'
+    version: '1.5.3'
+    extra_flags:
+      - '-j 1'
+  - name: 'llvm'
+    version: 11.0.1
+    extra_flags:
+      - '-j 6'
+  - name: 'llvm'
+    version: 11.0.1
+    variants:
+      - '+cuda'
+      - 'cuda_arch=35,60,70'
+    dependencies:
+      - '^cuda@10.1.243'
+    extra_flags:
+      - '-j 6'
+  - name: 'quantum-espresso'
+    version: '6.6'
+    variants:
+      - '+epw'
+      - 'hdf5=parallel'
+      - '+mpi'
+      - '+scalapack'
+  - name: 'hdf5'
+    version: 1.10.7
+    variants:
+      - '~mpi'
