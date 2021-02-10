@@ -59,8 +59,10 @@ collections:
   triton-generic:
     pip_packages:
       - bash-kernel
+      - forthon
       - jupyterlab-git
       - matlab-kernel
+      - mppl
       - nbscript
       - nbval
       - nbzip
@@ -93,6 +95,7 @@ collections:
      - cython
      - dill
      - docopt
+     - easygui
      - filelock
      - glob2
      - gpy
