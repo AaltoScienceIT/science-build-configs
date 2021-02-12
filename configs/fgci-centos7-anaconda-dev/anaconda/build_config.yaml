@@ -159,6 +159,7 @@ collections:
      - spyder
      - sympy
      - theano
+     - torchvision
      - twisted
      - typing
      - unicodecsv
