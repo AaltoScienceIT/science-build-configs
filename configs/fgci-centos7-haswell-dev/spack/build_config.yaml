@@ -99,3 +99,19 @@ packages:
       - '+gui'
   - name: 'hpl'
     version: '2.3'
+  - name: 'intel-parallel-studio'
+    version: 'cluster.2020.2'
+    licenses:
+      - 'license.lic'
+    variants:
+      - '+mpi'
+    dependencies:
+      - '%gcc@4.8.5'
+    flags:
+      cflags: -O2 -g -march=haswell
+      cxxflags: -O2 -g -march=haswell
+      fflags: -O2 -g -march=haswell
+    target_architecture:
+      platform: linux
+      os: centos7
+      arch: x86_64
