@@ -2,6 +2,7 @@ installer_checksums:
   Miniconda3-latest-Linux-x86_64.sh: 'bfe34e1fa28d6d75a7ad05fd02fa5472275673d5f5621b77380898dee1be15d2'
   Miniconda3-4.7.12.1-Linux-x86_64.sh: 'bfe34e1fa28d6d75a7ad05fd02fa5472275673d5f5621b77380898dee1be15d2'
   Miniconda3-py37_4.8.2-Linux-x86_64.sh: '957d2f0f0701c3d1335e3b39f235d197837ad69a944fa6f5d8ad2c686b69df3b'
+  Miniconda3-py38_4.9.2-Linux-x86_64.sh: '1314b90489f154602fd794accfc90446111514a5a72fe1f71ab83e07de9504a7'
   Anaconda3-2019.10-Linux-x86_64.sh: '46d762284d252e51cd58a8ca6c8adc9da2eadc82c342927b2f66ed011d1d8b53'
   Anaconda3-2020.02-Linux-x86_64.sh: '2b9f088b2022edb474915d9f69a803d6449d5fdb4c303041f60ac4aefcc208bb'
 environments:
@@ -84,6 +85,17 @@ environments:
     collections:
       - tensorflow-v2
       - triton-generic
+  - name: neuroimaging
+    version: '2021-01'
+    miniconda: True
+    python_version: 3
+    installer_version: 'py38_4.9.2'
+    condarc:
+      channels:
+        - defaults
+        - conda-forge
+    collections:
+      - neuroimaging
 collections:
   tensorflow-v1:
     conda_packages:
@@ -311,3 +323,56 @@ collections:
       - xlsxwriter
       - xlwt
       - xmltodict
+  neuroimaging:
+    conda_packages:
+      - python>=3.8
+      - pip
+      - numpy
+      - scipy
+      - matplotlib
+      - numba
+      - pandas
+      - xlrd
+      - scikit-learn
+      - h5py
+      - pillow
+      - statsmodels
+      - jupyter
+      - joblib
+      - psutil
+      - numexpr
+      - traits
+      - pyface
+      - traitsui
+      - imageio
+      - tqdm
+      - spyder-kernels>=1.10.0
+      - imageio-ffmpeg>=0.4.1
+      - vtk>=9.0.1
+      - pyvista>=0.24
+      - pyvistaqt>=0.2.0
+      - mayavi
+      - PySurfer
+      - dipy
+      - nibabel
+      - nilearn
+      - python-picard
+      - pyqt
+      - mne
+      - mffpy>=0.5.7
+      - doit
+      - spyder
+    pip_packages:
+      - autoreject
+      - bids_validator
+      - codespell
+      - nipy
+      - nipype
+      - nitime
+      - sphinx_bootstrap_theme
+      - sphinx_fontawesome
+      - sphinx-gallery
+      - "https://github.com/AaltoImagingLanguage/conpy/archive/master.zip"
+      - "https://github.com/wmvanvliet/posthoc/archive/master.zip"
+      - "https://github.com/wmvanvliet/mne_microstates/archive/master.zip"
+      - "https://github.com/wmvanvliet/mne-rsa/archive/master.zip"
