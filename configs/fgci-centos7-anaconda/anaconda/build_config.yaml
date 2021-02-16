@@ -28,6 +28,17 @@ environments:
     collections:
       - tensorflow-v2
       - triton-generic
+  - name: neuroimaging
+    version: '2021-01'
+    miniconda: True
+    python_version: 3
+    installer_version: 'py38_4.9.2'
+    condarc:
+      channels:
+        - defaults
+        - conda-forge
+    collections:
+      - neuroimaging
 collections:
   tensorflow-v1:
     conda_packages:
