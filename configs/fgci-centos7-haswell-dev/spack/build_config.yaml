@@ -115,3 +115,9 @@ packages:
       - '+gui'
   - name: 'hpl'
     version: '2.3'
+  - name: 'gromacs'
+    version: '2020.4'
+    variants:
+      - '+blas'
+      - '+mpi'
+      - '+openmp'
