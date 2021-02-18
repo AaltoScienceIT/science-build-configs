@@ -36,7 +36,7 @@ packages:
     variants: +virtual_machine threads=openmp +pic
   openmpi:
     version: [4.0.5]
-    variants: fabrics=verbs +pmi +thread_multiple schedulers=slurm +legacylaunchers
+    variants: fabrics=ucx +pmi +thread_multiple schedulers=slurm +legacylaunchers
   openssl:
     externals:
       - spec: openssl@1.0.2k
@@ -64,6 +64,8 @@ packages:
   sqlite:
     version: [3.34.0]
     variants: +column_metadata +fts +functions +rtree
+  ucx:
+    variants: +thread_multiple
   all:
     compiler: [gcc@8.4.0, gcc, intel, pgi, clang, xl, nag]
     providers:
