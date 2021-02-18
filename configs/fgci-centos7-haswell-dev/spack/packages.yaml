@@ -36,7 +36,7 @@ packages:
     variants: +virtual_machine threads=openmp +pic
   openmpi:
     version: [4.0.5]
-    variants: fabrics=ucx +pmi +thread_multiple schedulers=slurm +legacylaunchers
+    variants: fabrics=verbs +pmi +thread_multiple schedulers=slurm +legacylaunchers
   openssl:
     externals:
       - spec: openssl@1.0.2k
