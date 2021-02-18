@@ -121,5 +121,3 @@ packages:
       - '+blas'
       - '+mpi'
       - '+openmp'
-    dependencies:
-      - '^openmpi@4.0.2'
