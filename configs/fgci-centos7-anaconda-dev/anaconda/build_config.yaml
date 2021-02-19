@@ -207,6 +207,7 @@ collections:
       - mffpy>=0.5.7
       - doit
       - spyder
+      - datalad
     pip_packages:
       - autoreject
       - bids_validator
