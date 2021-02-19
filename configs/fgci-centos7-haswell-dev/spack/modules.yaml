@@ -107,6 +107,10 @@ modules:
       suffixes:
         'threads=none'   : 'singlethreaded'
         'threads=openmp' : 'openmp'
+    openmpi:
+      environment:
+        set:
+          SLURM_MPI_TYPE: 'pmix_v2'
     scalapack:
       suffixes:
         '^openblas threads=none': 'singlethreaded'

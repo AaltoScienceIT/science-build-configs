@@ -65,7 +65,7 @@ packages:
     version: [3.34.0]
     variants: +column_metadata +fts +functions +rtree
   ucx:
-    version: [1.7.0]
+    version: [1.8.1]
     variants: +thread_multiple
   all:
     compiler: [gcc@8.4.0, gcc, intel, pgi, clang, xl, nag]
