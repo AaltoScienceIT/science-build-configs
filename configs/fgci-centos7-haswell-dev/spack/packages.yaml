@@ -34,6 +34,8 @@ packages:
   openblas:
     version: [0.3.13]
     variants: +virtual_machine threads=openmp +pic
+  openjdk:
+    version: [11.0.8_10]
   openmpi:
     version: [4.0.5]
     variants: fabrics=ucx +pmi +thread_multiple schedulers=slurm +legacylaunchers
