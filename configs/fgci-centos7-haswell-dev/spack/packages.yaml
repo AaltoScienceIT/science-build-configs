@@ -77,7 +77,7 @@ packages:
       gl: [mesa]
       golang: [gcc]
       ipp: [intel-ipp]
-      java: [jdk]
+      java: [openjdk]
       lapack: [openblas]
       mkl: [intel-mkl]
       mpe: [mpe2]
