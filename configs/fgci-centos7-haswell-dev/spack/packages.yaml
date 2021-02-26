@@ -28,7 +28,7 @@ packages:
         prefix: /usr
     buildable: False
   mesa:
-    variants: +glx +llvm +opengl +osmesa swr=none
+    variants: +glx +llvm +opengl +osmesa swr=avx2
   netcdf-c:
     version: [4.7.4]
   openblas:
