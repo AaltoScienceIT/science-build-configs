@@ -127,5 +127,5 @@ packages:
     version: '20.2.1'
   - name: 'mujoco'
     licenses:
-      - 'mjkey.txt'
+      - 'bin/mjkey.txt'
     version: '2.0.0'
