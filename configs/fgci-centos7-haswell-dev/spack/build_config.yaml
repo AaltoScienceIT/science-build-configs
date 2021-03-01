@@ -130,4 +130,4 @@ packages:
     licenses:
       - 'mjkey.txt'
     dependencies:
-      - '^mesa~llvm swr=auto'
+      - '^mesa~llvm swr=none'
