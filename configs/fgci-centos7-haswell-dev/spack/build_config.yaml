@@ -125,7 +125,3 @@ packages:
     version: 'stable_release-7-96-17'
   - name: 'mesa'
     version: '20.2.1'
-  - name: 'mesa'
-    version: '20.2.1'
-    dependencies:
-      - '^llvm~python'
