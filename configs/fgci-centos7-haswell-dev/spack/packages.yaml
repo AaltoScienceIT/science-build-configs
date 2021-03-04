@@ -36,7 +36,7 @@ packages:
     variants: +virtual_machine threads=openmp +pic
   opengl:
     externals:
-      - spec: opengl@4.5
+      - spec: opengl@4.5 arch=linux-centos7-haswell
         prefix: /usr
     buildable: False
   openjdk:

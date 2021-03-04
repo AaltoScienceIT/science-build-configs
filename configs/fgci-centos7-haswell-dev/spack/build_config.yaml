@@ -135,7 +135,3 @@ packages:
       - 'mjkey.txt'
     dependencies:
       - '^opengl'
-    target_architecture:
-      platform: linux
-      os: centos7
-      arch: haswell
