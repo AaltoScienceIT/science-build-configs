@@ -122,3 +122,8 @@ modules:
       environment:
         set:
           UCX_WARN_UNUSED_ENV_VARS: 'n'
+    mujoco:
+      environment:
+        set:
+          MUJOCO_PY_MJKEY_PATH: '${PREFIX}/bin/mjkey.txt'
+          MUJOCO_PY_MUJOCO_PATH: '${PREFIX}'
