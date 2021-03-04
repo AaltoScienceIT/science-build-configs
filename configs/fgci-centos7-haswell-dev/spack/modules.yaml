@@ -122,7 +122,7 @@ modules:
       environment:
         set:
           UCX_WARN_UNUSED_ENV_VARS: 'n'
-    mujoco@2.0.0:
+    mujoco:
       suffixes:
         '^mesa' : 'mesa'
         '^opengl': 'systemgl'
