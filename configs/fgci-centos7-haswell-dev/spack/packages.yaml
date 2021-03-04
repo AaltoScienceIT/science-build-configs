@@ -34,6 +34,11 @@ packages:
   openblas:
     version: [0.3.13]
     variants: +virtual_machine threads=openmp +pic
+  opengl:
+    externals:
+      - spec: opengl@4.5
+        prefix: /usr
+    buildable: False
   openjdk:
     version: [11.0.8_10]
   openmpi:
@@ -76,7 +81,7 @@ packages:
       blas: [openblas]
       daal: [intel-daal]
       elf: [elfutils]
-      gl: [mesa]
+      gl: [mesa, opengl]
       golang: [gcc]
       ipp: [intel-ipp]
       java: [openjdk]

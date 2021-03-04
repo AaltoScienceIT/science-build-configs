@@ -129,3 +129,9 @@ packages:
     version: '2.0.0'
     licenses:
       - 'mjkey.txt'
+  - name: 'mujoco'
+    version: '2.0.0'
+    licenses:
+      - 'mjkey.txt'
+    variants:
+      - '^opengl'
