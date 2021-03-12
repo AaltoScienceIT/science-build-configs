@@ -91,3 +91,9 @@ packages:
     version: 1.10.7
     variants:
       - '~mpi'
+  - name: 'gromacs'
+    version: '2020.4'
+    variants:
+      - '+blas'
+      - '+mpi'
+      - '+openmp'
