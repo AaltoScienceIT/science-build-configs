@@ -63,8 +63,6 @@ packages:
   r:
     version: [4.0.3]
     variants: +X +external-lapack
-  perl:
-    version: [5.32.0]
   slurm:
     externals:
       - spec: slurm@18-08-8-1
