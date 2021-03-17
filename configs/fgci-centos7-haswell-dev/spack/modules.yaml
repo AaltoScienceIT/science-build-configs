@@ -101,6 +101,7 @@ modules:
       environment:
         set:
           SLURM_MPI_TYPE: 'pmi2'
+          I_MPI_OFI_PROVIDER: 'verbs'
       suffixes:
         '+mpi'           : 'intelmpi'
     openblas:
