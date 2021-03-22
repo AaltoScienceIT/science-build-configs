@@ -72,6 +72,7 @@ modules:
         '^r@3.6.1'       : 'r-3.6.1'
         '^r@3.6.3'       : 'r-3.6.3'
         '%gcc@6.5.0'     : 'gcc-6.5.0'
+        '^ucx@1.8.1'     : 'ucx-1.8.1'
     cp2k:
       environment:
         set:
@@ -109,8 +110,6 @@ modules:
         'threads=none'   : 'singlethreaded'
         'threads=openmp' : 'openmp'
     openmpi:
-      suffixes:
-        '^ucx@1.9.0'     : 'ucx-1.9.0'
       environment:
         set:
           SLURM_MPI_TYPE: 'pmix_v2'
