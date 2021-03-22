@@ -109,6 +109,8 @@ modules:
         'threads=none'   : 'singlethreaded'
         'threads=openmp' : 'openmp'
     openmpi:
+      suffixes:
+        '^ucx@1.9.0'     : 'ucx-1.9.0'
       environment:
         set:
           SLURM_MPI_TYPE: 'pmix_v2'
