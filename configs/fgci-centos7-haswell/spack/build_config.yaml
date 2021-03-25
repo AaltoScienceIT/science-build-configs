@@ -97,3 +97,10 @@ packages:
       - '+blas'
       - '+mpi'
       - '+openmp'
+  - name: 'gsl'
+    version: '2.6'
+  - name: 'geant4'
+    version: '10.7.1'
+    variants:
+      - '+ipo'
+      - '+python'
