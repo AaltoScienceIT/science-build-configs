@@ -130,6 +130,7 @@ collections:
       - jupyterlab
       - jupytext
       - keras
+      - librosa
       - metakernel
       - mne
       - more-itertools
@@ -161,6 +162,7 @@ collections:
       - pycrypto
       - pycurl
       - pympler
+      - pysoundfile
       - pytest-astropy
       - python-libarchive-c
       - python-snappy
@@ -179,6 +181,7 @@ collections:
       - sympy
       - theano
       - torchvision
+      - torchaudio
       - twisted
       - typing
       - unicodecsv
