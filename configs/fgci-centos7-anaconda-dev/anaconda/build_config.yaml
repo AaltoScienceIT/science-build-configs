@@ -112,6 +112,7 @@ collections:
       - cuspatial
       - cuxfilter
       - cython
+      - datalad
       - dill
       - docopt
       - easygui
