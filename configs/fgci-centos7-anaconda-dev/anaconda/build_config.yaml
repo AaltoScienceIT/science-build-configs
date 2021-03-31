@@ -126,12 +126,14 @@ collections:
       - iniconfig
       - ipdb
       - jbig
+      - joblib
       - jupyter
       - jupyter_contrib_nbextensions
       - jupyterlab
       - jupytext
       - keras
       - librosa
+      - line_profiler
       - metakernel
       - mne
       - more-itertools
@@ -179,6 +181,7 @@ collections:
       - sphinx_rtd_theme
       - sphinxcontrib-websupport
       - spyder
+      - spyder-line-profiler
       - sympy
       - theano
       - torchvision
