@@ -160,3 +160,5 @@ packages:
     version: '1.2.2'
   - name: 'xterm'
     version: '353'
+  - name: 'snakemake'
+    version: '6.1.1'
