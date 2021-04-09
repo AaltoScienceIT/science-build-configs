@@ -162,3 +162,5 @@ packages:
     version: '353'
   - name: 'snakemake'
     version: '6.1.1'
+  - name: 'emacs'
+    version: '27.1'
