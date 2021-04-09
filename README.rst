@@ -2,7 +2,7 @@ Aalto science-build-configs
 ===========================
 
 This repository containes instructions that are given to a CI system
-defined in [science-build-rules](https://github.com/AaltoSciComp/science-build-rules).
+defined in `science-build-rules <https://github.com/AaltoSciComp/science-build-rules>`_.
 The configs are read by build rules that then go through the builds.
 
 Spack flow of configurations
@@ -15,7 +15,7 @@ Triton, Aalto workstations, and so on.
 
 Installation paths, defaults for packages and modules and other spack
 related configuration parameters are set in
-[Spack's site configs](https://spack.readthedocs.io/en/latest/configuration.html#configuration-scopes)
+`Spack's site configs <https://spack.readthedocs.io/en/latest/configuration.html#configuration-scopes>`_
 `config.yaml`, `packages.yaml` and `modules.yaml`. Deployment
 strategy is described in `deployment_config.yaml`.
 
