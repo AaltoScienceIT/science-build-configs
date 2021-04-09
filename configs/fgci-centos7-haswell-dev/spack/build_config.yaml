@@ -164,3 +164,7 @@ packages:
     version: '6.1.1'
   - name: 'emacs'
     version: '27.1'
+  - name: 'emacs'
+    version: '27.1'
+    dependencies:
+      - '%intel-parallel-studio@cluster.2020.0'
