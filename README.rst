@@ -35,8 +35,8 @@ in numerical order.  Note that it's not a linear process:
 After fgci-centos7-dev/, things can be propagated to Aalto
 workstations:
 
-* 1. ``aalto-ubuntu2004-skylake-dev/``
-* 1. ``aalto-ubuntu2004-skylake/``
+* 3. ``aalto-ubuntu2004-skylake-dev/``
+* 4. ``aalto-ubuntu2004-skylake/``
 
 Anaconda flow of configuration
 ------------------------------
@@ -65,8 +65,8 @@ in numerical order.  Note that it's not a linear process:
 After fgci-centos7-dev/, things can be propagated to Aalto
 workstations:
 
-* 1. ``aalto-ubuntu2004-anaconda-dev/``
-* 1. ``aalto-ubuntu2004-anaconda/``
+* 3. ``aalto-ubuntu2004-anaconda-dev/``
+* 4. ``aalto-ubuntu2004-anaconda/``
 
 Singularity flow of configuration
 ---------------------------------
