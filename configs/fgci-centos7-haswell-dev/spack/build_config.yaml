@@ -164,3 +164,5 @@ packages:
     version: '6.1.1'
   - name: 'emacs'
     version: '27.1'
+  - name: 'bazel'
+    version: '4.0.0'
