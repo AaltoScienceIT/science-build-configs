@@ -1,0 +1,82 @@
+command_collections:
+  common:
+    post_commands:
+      - 'mkdir /u'
+      - 'for i in $(seq 0 9); do for j in $(seq 0 9) ; do ln -s /m/home/home$i/$i$j /u/$i$j ; done ; done'
+      - 'mkdir /scratch'
+      - 'mkdir /m'
+      - 'mkdir /l'
+      - 'mkdir /raid'
+      - 'mkdir /share'
+      - 'mkdir -p /opt/mellanox'
+      - 'mkdir -p /var/singularity/mnt/final/usr/bin'
+  python3-run:
+    runscript_commands:
+      - 'exec python3 "$@"'
+  detectron:
+    environment_commands:
+      - 'export PYTHONPATH=$PYTHONPATH:/detectron/lib'
+  openfoam:
+    post_commands:
+      - 'cat /opt/OpenFOAM/setImage_v1712.sh >> /environment'
+  graph-tool:
+    post_commands:
+      - 'pacman -S python-pip python-virtualenv --noconfirm --needed'
+  stylegan2:
+    post_commands:
+      - 'pip install scipy==1.3.3'
+      - 'pip install requests==2.22.0'
+      - 'pip install Pillow==6.2.1'
+  stylegan2_pytorch:
+    post_commands:
+      - 'apt-get update'
+      - 'apt-get -y install -q build-essential g++'
+      - 'rm -rf /var/lib/apt/lists/*'
+  compilers:
+    post_commands:
+      - 'apt-get update'
+      - 'apt-get -y install -q build-essential g++'
+      - 'rm -rf /var/lib/apt/lists/*'
+  dpabi:
+    post_commands:
+      - "echo '#!/bin/bash' > /usr/local/bin/DPABI"
+      - "echo '/opt/DPABI/DPABI_StandAlone/run_DPABI_StandAlone.sh /opt/mcr/v98' >> /usr/local/bin/DPABI"
+      - "chmod +x /usr/local/bin/DPABI"
+      - "/usr/local/bin/DPABI extra_argument || echo 'Ran DPABI to unpack ctf'"
+      - "echo '#!/bin/bash' > /usr/local/bin/DPABISurf"
+      - "echo '/opt/DPABI/DPABI_StandAlone/run_DPABISurf_run_StandAlone.sh /opt/mcr/v98 \"$@\"' >> /usr/local/bin/DPABISurf"
+      - "chmod +x /usr/local/bin/DPABISurf"
+      - "/usr/local/bin/DPABISurf missing_file.m || echo 'Ran DPABISurf to unpack ctf'"
+flag_collections:
+  common:
+    - '-B /m:/m'
+    - '-B /l:/l'
+    - '-B /scratch:/scratch'
+  dgx:
+    - '-B /raid:/raid'
+  nvidia:
+    - '--nv'
+  cntk:
+    - '-B /tmp:/run/lock'
+  mellanox:
+    - '-B /opt/mellanox:/opt/mellanox'
+  modules:
+    - '-B /share:/share'
+  openpose:
+    - '--workdir /opt/openpose'
+  dpabi:
+    - '-B /share/apps/licenses/freesurfer/6.0.0/license.txt:/opt/freesurfer/license.txt'
+definitions:
+  - name: 'nvidia-pytorch'
+    docker_user: 'nvidia'
+    docker_image: 'pytorch'
+    registry: 'nvcr.io'
+    module_namespace: 'common'
+    tags:
+      - '21.03-py3'
+    command_collections:
+      - 'common'
+      - 'compilers'
+    flag_collections:
+      - 'common'
+      - 'nvidia'
