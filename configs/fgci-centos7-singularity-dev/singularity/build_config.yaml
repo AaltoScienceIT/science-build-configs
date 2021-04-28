@@ -47,6 +47,9 @@ command_collections:
       - "echo '/opt/DPABI/DPABI_StandAlone/run_DPABISurf_run_StandAlone.sh /opt/mcr/v98 \"$@\"' >> /usr/local/bin/DPABISurf"
       - "chmod +x /usr/local/bin/DPABISurf"
       - "/usr/local/bin/DPABISurf missing_file.m || echo 'Ran DPABISurf to unpack ctf'"
+  carla:
+    runscript_commands:
+      - 'bash /home/carla/CarlaUE4.sh "$@"'
 flag_collections:
   common:
     - '-B /m:/m'
@@ -77,6 +80,18 @@ definitions:
     command_collections:
       - 'common'
       - 'compilers'
+    flag_collections:
+      - 'common'
+      - 'nvidia'
+  - name: 'singularity-carla'
+    docker_user: 'carlasim'
+    docker_image: 'carla'
+    module_namespace: 'common'
+    tags:
+      - '0.9.9'
+    command_collections:
+      - 'common'
+      - 'carla'
     flag_collections:
       - 'common'
       - 'nvidia'
