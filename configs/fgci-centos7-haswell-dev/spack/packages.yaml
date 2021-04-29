@@ -53,6 +53,8 @@ packages:
     variants: +X
   pcre:
     variants: +jit +utf
+  pkgconf:
+    version: [1.7.3]
   python:
     version: [3.8.7]
     variants: +pic +shared +optimizations +uuid +pythoncmd
