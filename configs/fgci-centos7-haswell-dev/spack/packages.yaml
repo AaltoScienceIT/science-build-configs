@@ -9,8 +9,6 @@ packages:
     variants: +openmp
   fontconfig:
     version: [2.13.1]
-  gdbm:
-    version: [1.18.1]
   gcc:
     version: [8.4.0, 9.3.0, 6.5.0]
     variants: +piclibs
@@ -68,8 +66,6 @@ packages:
   r:
     version: [4.0.3]
     variants: +X +external-lapack
-  readline:
-    version: [8.0]
   slurm:
     externals:
       - spec: slurm@18-08-8-1
