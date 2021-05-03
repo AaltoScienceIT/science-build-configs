@@ -50,10 +50,12 @@ command_collections:
   carla:
     post_commands:
       - 'apt-get update'
-      - 'apt-get -y install -q xdg-user-dirs xdg-utils'
+      - 'apt-get -y install -q xdg-user-dirs xdg-utils freeglut3-dev mesa-utils libsdl2'
       - 'rm -rf /var/lib/apt/lists/*'
-    runscript_commands:
-      - 'bash /home/carla/CarlaUE4.sh "$@"'
+    environment_commands:
+      - 'export DISPLAY='
+      - 'export SDL_VIDEODRIVER=offscreen'
+      - 'export SDL_HINT_CUDA_DEVICE=0'
 flag_collections:
   common:
     - '-B /m:/m'
