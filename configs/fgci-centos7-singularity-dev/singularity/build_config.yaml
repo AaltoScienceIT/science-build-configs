@@ -48,6 +48,11 @@ command_collections:
       - "chmod +x /usr/local/bin/DPABISurf"
       - "/usr/local/bin/DPABISurf missing_file.m || echo 'Ran DPABISurf to unpack ctf'"
   carla:
+    post_commands:
+      - 'apt-get update'
+      - 'apt-get -y install -q xdg-user-dirs xdg-utils'
+      - 'rm -rf /var/lib/apt/lists/*'
+      - 'chmod +x /home/carla/CarlaUE4/Binaries/Linux/CarlaUE4-Linux-Shipping.debug'
     runscript_commands:
       - 'bash /home/carla/CarlaUE4.sh "$@"'
 flag_collections:
