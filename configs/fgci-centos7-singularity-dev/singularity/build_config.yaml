@@ -52,7 +52,6 @@ command_collections:
       - 'apt-get update'
       - 'apt-get -y install -q xdg-user-dirs xdg-utils'
       - 'rm -rf /var/lib/apt/lists/*'
-      - 'chmod +x /home/carla/CarlaUE4/Binaries/Linux/CarlaUE4-Linux-Shipping.debug'
     runscript_commands:
       - 'bash /home/carla/CarlaUE4.sh "$@"'
 flag_collections:
