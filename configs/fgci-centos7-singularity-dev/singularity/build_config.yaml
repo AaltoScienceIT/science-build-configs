@@ -50,7 +50,7 @@ command_collections:
   carla:
     post_commands:
       - 'apt-get update'
-      - 'apt-get -y install -q xdg-user-dirs xdg-utils'
+      - 'apt-get -y install -q xdg-user-dirs xdg-utils libxext-dev libx11-dev x11proto-gl-dev libxext6 libx11-6  libglvnd0 libgl1 libglx0 libegl1 freeglut3-dev'
       - 'rm -rf /var/lib/apt/lists/*'
       - 'chmod +x /home/carla/CarlaUE4/Binaries/Linux/CarlaUE4-Linux-Shipping.debug'
     runscript_commands:
