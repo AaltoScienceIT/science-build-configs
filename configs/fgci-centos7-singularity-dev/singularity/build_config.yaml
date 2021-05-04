@@ -50,7 +50,7 @@ command_collections:
   carla:
     post_commands:
       - 'apt-get update'
-      - 'apt-get -y install -q xdg-user-dirs xdg-utils freeglut3-dev mesa-utils libsdl2'
+      - 'apt-get -y install -q xdg-user-dirs xdg-utils freeglut3-dev mesa-utils'
       - 'rm -rf /var/lib/apt/lists/*'
     environment_commands:
       - 'export DISPLAY='
