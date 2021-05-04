@@ -167,3 +167,5 @@ packages:
     version: '27.1'
   - name: 'bazel'
     version: '3.7.1'
+  - name: 'ants'
+    version: '2.2.0'
