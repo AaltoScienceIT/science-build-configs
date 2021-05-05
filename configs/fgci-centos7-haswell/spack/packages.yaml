@@ -21,6 +21,7 @@ packages:
   latte:
     variants: +progress
   llvm:
+    version: [11.0.1]
     variants: +python
   m4:
     externals:
@@ -46,6 +47,8 @@ packages:
     variants: +X
   pcre:
     variants: +jit +utf
+  pkgconf:
+    version: [1.7.3]
   python:
     version: [3.8.7]
     variants: +pic +shared +optimizations +uuid +pythoncmd
@@ -77,7 +80,7 @@ packages:
       gl: [mesa]
       golang: [gcc]
       ipp: [intel-ipp]
-      java: [jdk]
+      java: [openjdk]
       lapack: [openblas]
       mkl: [intel-mkl]
       mpe: [mpe2]
