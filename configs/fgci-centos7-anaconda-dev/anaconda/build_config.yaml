@@ -34,6 +34,25 @@ environments:
     miniconda: True
     python_version: 3
     installer_version: 'py38_4.9.2'
+    freeze: True
+    condarc:
+      channels:
+        - pytorch
+        - rapidsai
+        - defaults
+        - conda-forge
+        - nvidia
+        - gurobi
+        - IBMDecisionOptimization
+        - mosek
+    collections:
+      - tensorflow-v2
+      - triton-generic
+  - name: anaconda
+    version: '2021-03-tf2'
+    miniconda: True
+    python_version: 3
+    installer_version: 'py38_4.9.2'
     condarc:
       channels:
         - pytorch
@@ -71,7 +90,7 @@ collections:
     conda_packages:
       - tensorboard
       - tensorboard-plugin-wit
-      - tensorflow=2.4.*
+      - tensorflow=2.4.*=gpu_*
       - tensorflow-base
       - tensorflow-estimator
       - tensorflow-gpu
@@ -104,7 +123,7 @@ collections:
       - configargparse
       - contextlib2
       - cplex
-      - cudatoolkit=10.1.*
+      - cudatoolkit=10.*
       - cudf
       - cuml
       - cugraph
@@ -171,7 +190,7 @@ collections:
       - python-libarchive-c
       - python-snappy
       - python=3.8.*
-      - pytorch=1.7.*
+      - pytorch=1.8.1=*cuda*
       - ripgrep
       - scikit-image
       - seaborn
