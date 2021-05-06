@@ -56,6 +56,10 @@ command_collections:
       - 'export DISPLAY='
       - 'export SDL_VIDEODRIVER=offscreen'
       - 'export SDL_HINT_CUDA_DEVICE=0'
+  openface:
+    post_commands:
+      - 'mkdir /local'
+      - 'mv /root/* /local'
 flag_collections:
   common:
     - '-B /m:/m'
@@ -122,5 +126,6 @@ definitions:
       - 'latest'
     command_collections:
       - 'common'
+      - 'openface'
     flag_collections:
       - 'common'
