@@ -58,7 +58,7 @@ command_collections:
       - 'export SDL_HINT_CUDA_DEVICE=0'
   openface:
     post_commands:
-      - 'chmod -Rh a=r,a+X /home/openface-build'
+      - 'chmod -R a=r,a+X /home/openface-build'
     environment_commands:
       - 'export PATH=/home/openface-build/build/bin:$PATH'
 flag_collections:
