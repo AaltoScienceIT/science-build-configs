@@ -167,9 +167,9 @@ packages:
     version: '27.1'
   - name: 'bazel'
     version: '3.7.1'
-  - name: namd
-    version: 2.14
+  - name: 'namd'
+    version: '2.14'
     variants:
-      - +cuda
-      - cuda_arch=37,60,70,80
-      - interface=python
+      - '+cuda'
+      - 'cuda_arch=37,60,70,80'
+      - 'interface=python'
