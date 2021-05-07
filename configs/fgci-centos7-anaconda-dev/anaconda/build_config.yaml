@@ -2,6 +2,17 @@ installer_checksums:
   Miniconda3-py37_4.9.2-Linux-x86_64.sh: '79510c6e7bd9e012856e25dcb21b3e093aa4ac8113d9aa7e82a86987eabe1c31'
   Miniconda3-py38_4.9.2-Linux-x86_64.sh: '1314b90489f154602fd794accfc90446111514a5a72fe1f71ab83e07de9504a7'
 environments:
+  - name: fgci-tech-example
+    version: '2021-0'
+    miniconda: True
+    python_version: 3
+    installer_version: 'py38_4.9.2'
+    condarc:
+      channels:
+        - defaults
+        - conda-forge
+    collections:
+      - fgci-tech-example
   - name: miniconda
     version: '4.9.2'
     miniconda: True
@@ -78,6 +89,11 @@ environments:
     collections:
       - neuroimaging
 collections:
+  fgci-tech-example:
+    conda_packages:
+      - numpy
+    pip_packages:
+      - scipy
   tensorflow-v1:
     conda_packages:
       - tensorboard
