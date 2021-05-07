@@ -15,6 +15,25 @@ environments:
     miniconda: True
     python_version: 3
     installer_version: 'py38_4.9.2'
+    freeze: True
+    condarc:
+      channels:
+        - pytorch
+        - rapidsai
+        - defaults
+        - conda-forge
+        - nvidia
+        - gurobi
+        - IBMDecisionOptimization
+        - mosek
+    collections:
+      - tensorflow-v2
+      - triton-generic
+  - name: anaconda
+    version: '2021-03-tf2'
+    miniconda: True
+    python_version: 3
+    installer_version: 'py38_4.9.2'
     condarc:
       channels:
         - pytorch
@@ -52,7 +71,7 @@ collections:
     conda_packages:
       - tensorboard
       - tensorboard-plugin-wit
-      - tensorflow=2.4.*
+      - tensorflow=2.4.*=gpu_*
       - tensorflow-base
       - tensorflow-estimator
       - tensorflow-gpu
@@ -85,7 +104,7 @@ collections:
       - configargparse
       - contextlib2
       - cplex
-      - cudatoolkit=10.1.*
+      - cudatoolkit=10.*
       - cudf
       - cuml
       - cugraph
@@ -93,6 +112,7 @@ collections:
       - cuspatial
       - cuxfilter
       - cython
+      - datalad
       - dill
       - docopt
       - easygui
@@ -106,11 +126,15 @@ collections:
       - iniconfig
       - ipdb
       - jbig
+      - joblib
       - jupyter
       - jupyter_contrib_nbextensions
       - jupyterlab
       - jupytext
       - keras
+      - librosa
+      - libxscrnsaver-cos6-x86_64
+      - line_profiler
       - metakernel
       - mne
       - more-itertools
@@ -142,11 +166,12 @@ collections:
       - pycrypto
       - pycurl
       - pympler
+      - pysoundfile
       - pytest-astropy
       - python-libarchive-c
       - python-snappy
       - python=3.8.*
-      - pytorch=1.7.*
+      - pytorch=1.8.1=*cuda*
       - ripgrep
       - scikit-image
       - seaborn
@@ -157,9 +182,11 @@ collections:
       - sphinx_rtd_theme
       - sphinxcontrib-websupport
       - spyder
+      - spyder-line-profiler
       - sympy
       - theano
       - torchvision
+      - torchaudio
       - twisted
       - typing
       - unicodecsv
