@@ -165,6 +165,7 @@ collections:
       - nitime
       - nltk
       - nose
+      - defaults::numpy
       - openmp
       - openpyxl
       - pango
@@ -218,7 +219,7 @@ collections:
     conda_packages:
       - python>=3.8
       - pip
-      - defaults::numpy
+      - numpy
       - scipy
       - matplotlib
       - numba
