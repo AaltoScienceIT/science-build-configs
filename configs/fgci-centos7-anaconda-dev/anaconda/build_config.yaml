@@ -71,6 +71,19 @@ environments:
     miniconda: True
     python_version: 3
     installer_version: 'py38_4.9.2'
+    freeze: True
+    condarc:
+      channels:
+        - defaults
+        - conda-forge
+    collections:
+      - neuroimaging
+  - name: neuroimaging
+    version: '2021-02'
+    miniconda: True
+    python_version: 3
+    installer_version: 'py38_4.9.2'
+    freeze: True
     condarc:
       channels:
         - defaults
