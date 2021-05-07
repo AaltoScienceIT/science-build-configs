@@ -151,6 +151,7 @@ collections:
       - jupyterlab
       - jupytext
       - keras
+      - libblas=*=*mkl*
       - librosa
       - libxscrnsaver-cos6-x86_64
       - line_profiler
@@ -165,7 +166,7 @@ collections:
       - nitime
       - nltk
       - nose
-      - defaults::numpy
+      - numpy
       - openmp
       - openpyxl
       - pango
