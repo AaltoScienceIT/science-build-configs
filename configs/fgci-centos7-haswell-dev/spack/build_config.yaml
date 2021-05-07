@@ -167,3 +167,9 @@ packages:
     version: '27.1'
   - name: 'bazel'
     version: '3.7.1'
+  - name: 'pmix'
+    version: '3.2.1'
+    variants:
+      - '~docs'
+      - '+pmi_backwards_compatibility'
+      - '~restful'
