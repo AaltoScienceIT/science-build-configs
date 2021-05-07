@@ -52,6 +52,18 @@ environments:
     miniconda: True
     python_version: 3
     installer_version: 'py38_4.9.2'
+    freeze: True
+    condarc:
+      channels:
+        - defaults
+        - conda-forge
+    collections:
+      - neuroimaging
+  - name: neuroimaging
+    version: '2021-02'
+    miniconda: True
+    python_version: 3
+    installer_version: 'py38_4.9.2'
     condarc:
       channels:
         - defaults
@@ -196,46 +208,48 @@ collections:
   neuroimaging:
     conda_packages:
       - python>=3.8
-      - pip
-      - numpy
-      - scipy
-      - matplotlib
-      - numba
-      - pandas
-      - xlrd
-      - scikit-learn
-      - h5py
-      - pillow
-      - statsmodels
-      - jupyter
-      - joblib
-      - psutil
-      - numexpr
-      - traits
-      - pyface
-      - traitsui
-      - imageio
-      - tqdm
-      - spyder-kernels>=1.10.0
-      - imageio-ffmpeg>=0.4.1
-      - vtk>=9.0.1
-      - pyvista>=0.24
-      - pyvistaqt>=0.2.0
-      - mayavi
-      - PySurfer
       - dipy
+      - doit
+      - h5py
+      - imageio
+      - imageio-ffmpeg>=0.4.1
+      - joblib
+      - jupyter
+      - libblas=*=*mkl*
+      - matplotlib
+      - mayavi
+      - mffpy>=0.5.7
+      - mne
       - nibabel
       - nilearn
-      - python-picard
+      - numba
+      - numexpr
+      - numpy
+      - pandas
+      - pillow
+      - pip
+      - psutil
+      - pyface
       - pyqt
-      - mne
-      - mffpy>=0.5.7
-      - doit
+      - PySurfer
+      - python-picard
+      - pyvista>=0.24
+      - pyvistaqt>=0.2.0
+      - scikit-learn
+      - scipy
       - spyder
+      - spyder-kernels>=1.10.0
+      - statsmodels
+      - tqdm
+      - traits
+      - traitsui
+      - vtk>=9.0.1
+      - xlrd
     pip_packages:
       - autoreject
       - bids_validator
       - codespell
+      - filename-templates
       - nipy
       - nipype
       - nitime
