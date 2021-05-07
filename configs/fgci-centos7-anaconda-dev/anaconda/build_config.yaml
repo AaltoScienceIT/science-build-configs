@@ -260,6 +260,7 @@ collections:
       - autoreject
       - bids_validator
       - codespell
+      - filename-templates
       - nipy
       - nipype
       - nitime
