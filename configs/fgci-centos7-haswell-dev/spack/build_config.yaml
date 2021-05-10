@@ -176,5 +176,4 @@ packages:
   - name: 'mpifileutils'
     version: '0.11'
     variants:
-      - '+lustre'
       - '+xattr'
