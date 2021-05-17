@@ -107,6 +107,9 @@ modules:
       environment:
         set:
           SLURM_MPI_TYPE: 'pmix_v2'
+    mesa:
+      suffixes:
+        '+llvm'          : 'llvm'
     scalapack:
       suffixes:
         '^openblas threads=none': 'singlethreaded'
