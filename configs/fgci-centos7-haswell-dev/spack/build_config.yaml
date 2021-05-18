@@ -179,3 +179,7 @@ packages:
       - '+xattr'
   - name: 'ants'
     version: '2.3.5'
+  - name: 'namd'
+    version: '2.14'
+    dependencies:
+      - '^charmpp backend=ucx pmi=slurmpmi2'
