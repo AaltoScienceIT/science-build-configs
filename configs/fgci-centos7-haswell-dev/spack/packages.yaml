@@ -4,7 +4,7 @@ packages:
   cairo:
     variants: +X +gobject +pdf
   charmpp:
-    variants: backend=ucx pmi=slurmpmi2
+    variants: backend=mpi
   curl:
     variants: +libssh2 ~nghttp
   fftw:
