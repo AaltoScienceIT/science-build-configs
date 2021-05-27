@@ -197,3 +197,5 @@ packages:
     version: '2.3.5'
   - name: 'namd'
     version: '2.14'
+  - name: 'ior'
+    version: '3.3.0'
