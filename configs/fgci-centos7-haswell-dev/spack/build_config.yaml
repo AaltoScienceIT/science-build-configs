@@ -70,8 +70,6 @@ compilers:
       arch: x86_64
   - name: 'intel-oneapi-compilers'
     version: '2021.2.0'
-    variants:
-      - '+mpi'
     dependencies:
       - '%gcc@4.8.5'
     flags:
