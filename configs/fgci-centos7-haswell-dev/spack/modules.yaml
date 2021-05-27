@@ -29,6 +29,7 @@ modules:
       - mpi
     whitelist:
       - 'gcc'
+      - 'intel-oneapi-compilers'
       - 'paraview'
       - 'openmpi'
       - 'clhep'
