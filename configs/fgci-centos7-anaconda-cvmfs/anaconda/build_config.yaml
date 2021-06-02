@@ -1,0 +1,169 @@
+installer_checksums:
+  Miniconda3-py37_4.9.2-Linux-x86_64.sh: '79510c6e7bd9e012856e25dcb21b3e093aa4ac8113d9aa7e82a86987eabe1c31'
+  Miniconda3-py38_4.9.2-Linux-x86_64.sh: '1314b90489f154602fd794accfc90446111514a5a72fe1f71ab83e07de9504a7'
+environments:
+  - name: miniconda
+    version: '4.9.2'
+    miniconda: True
+    python_version: 3
+    installer_version: 'py38_4.9.2'
+    condarc:
+      channels:
+        - defaults
+  - name: anaconda
+    version: '2021-03-tf2'
+    miniconda: True
+    python_version: 3
+    installer_version: 'py38_4.9.2'
+    condarc:
+      channels:
+        - pytorch
+        - rapidsai
+        - defaults
+        - conda-forge
+        - nvidia
+        - gurobi
+        - IBMDecisionOptimization
+        - mosek
+    collections:
+      - tensorflow-v2
+      - triton-generic
+collections:
+  tensorflow-v1:
+    conda_packages:
+      - tensorboard
+      - tensorboard-plugin-wit
+      - tensorflow=1.15.0
+      - tensorflow-base
+      - tensorflow-estimator
+      - tensorflow-gpu
+  tensorflow-v2:
+    conda_packages:
+      - tensorboard
+      - tensorboard-plugin-wit
+      - tensorflow=2.4.*=gpu_*
+      - tensorflow-base
+      - tensorflow-estimator
+      - tensorflow-gpu
+  triton-generic:
+    pip_packages:
+      - bash-kernel
+      - forthon
+      - jupyterlab-git
+      - matlab-kernel
+      - mppl
+      - nbscript
+      - nbval
+      - nbzip
+      - opencv-contrib-python
+      - pymanopt
+      - python-igraph
+      - roboschool
+      - snakemake
+    conda_packages:
+      - astropy
+      - bcolz
+      - beautifulsoup4
+      - bitarray
+      - bkcharts
+      # - blaze # No python3.8 build
+      - boto
+      - bottleneck
+      - clyent
+      - conda-tree
+      - configargparse
+      - contextlib2
+      - cplex
+      - cudatoolkit=10.*
+      - cudf
+      - cuml
+      - cugraph
+      - cusignal
+      - cuspatial
+      - cuxfilter
+      - cython
+      - datalad
+      - dill
+      - docopt
+      - easygui
+      - filelock
+      - glob2
+      - gpy
+      - greenlet
+      - gurobi
+      - html5lib
+      - importnb
+      - iniconfig
+      - ipdb
+      - jbig
+      - joblib
+      - jupyter
+      - jupyter_contrib_nbextensions
+      - jupyterlab
+      - jupytext
+      - keras
+      - libblas=*=*mkl*
+      - librosa
+      - libxscrnsaver-cos6-x86_64
+      - line_profiler
+      - metakernel
+      - mne
+      - more-itertools
+      - mosek
+      - mpi4py
+      - nbdime
+      - nbstripout
+      - nbval
+      - nitime
+      - nltk
+      - nose
+      - numpy
+      - openmp
+      - openpyxl
+      - pango
+      - patchelf
+      - path.py
+      - pathlib2
+      - pbr
+      - pep8
+      - phonopy
+      - pipdeptree
+      - pkginfo
+      - plotly
+      - ply
+      - py
+      - py-lief
+      - pyarrow
+      - pybind11
+      - pycrypto
+      - pycurl
+      - pympler
+      - pysoundfile
+      - pytest-astropy
+      - python-libarchive-c
+      - python-snappy
+      - python=3.8.*
+      - pytorch=1.8.1=*cuda*
+      - ripgrep
+      - scikit-image
+      - seaborn
+      - sh
+      - simplegeneric
+      - singledispatch
+      - sortedcollections
+      - sphinx_rtd_theme
+      - sphinxcontrib-websupport
+      - spyder
+      - spyder-line-profiler
+      - sympy
+      - theano
+      - torchvision
+      - torchaudio
+      - twisted
+      - typing
+      - unicodecsv
+      - unixodbc
+      - xgboost
+      - xlsxwriter
+      - xlwt
+      - xmltodict
