@@ -121,6 +121,7 @@ collections:
       - python-igraph
       - roboschool
       - snakemake
+      - webdataset
     conda_packages:
       - astropy
       - bcolz
@@ -224,7 +225,6 @@ collections:
       - typing
       - unicodecsv
       - unixodbc
-      - webdataset
       - xgboost
       - xlsxwriter
       - xlwt
