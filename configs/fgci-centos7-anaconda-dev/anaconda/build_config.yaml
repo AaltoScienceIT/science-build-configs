@@ -224,6 +224,7 @@ collections:
       - typing
       - unicodecsv
       - unixodbc
+      - webdataset
       - xgboost
       - xlsxwriter
       - xlwt
