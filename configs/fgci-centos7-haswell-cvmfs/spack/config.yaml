@@ -1,0 +1,14 @@
+config:
+  install_tree:
+    projections:
+      all: ${PACKAGE}/${VERSION}/${HASH:7}
+    root: /cvmfs/fgi.csc.fi/apps/el7/aalto/spack/fgci-centos7-haswell-cvmfs/software
+  module_roots:
+    tcl: /cvmfs/fgi.csc.fi/apps/el7/aalto/spack/fgci-centos7-haswell-cvmfs/modules
+    lmod: /cvmfs/fgi.csc.fi/apps/el7/aalto/spack/fgci-centos7-haswell-cvmfs/lmod
+  source_cache: /cache/spack
+  misc_cache: /tmp/spack_misc_cache
+  build_stage:
+    - $spack/var/spack/stage
+  locks: false
+  build_language: 'en_US.utf8'

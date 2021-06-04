@@ -1,0 +1,106 @@
+target_architecture:
+  platform: linux
+  os: centos7
+  arch: haswell
+compilers:
+  - name: 'gcc'
+    version: 4.8.5
+    system_compiler: true
+    flags:
+      cflags: -O2 -g
+      cxxflags: -O2 -g
+      fflags: -O2 -g
+  - name: 'gcc'
+    version: 9.3.0
+    variants:
+      - '+piclibs'
+    dependencies:
+      - '%gcc@4.8.5'
+    flags:
+      cflags: -O2 -g -march=haswell -ftree-vectorize
+      cxxflags: -O2 -g -march=haswell -ftree-vectorize
+      fflags: -O2 -g -march=haswell -ftree-vectorize
+    target_architecture:
+      platform: linux
+      os: centos7
+      arch: x86_64
+  - name: 'gcc'
+    version: 6.5.0
+    variants:
+      - '+piclibs'
+    dependencies:
+      - '%gcc@4.8.5'
+    flags:
+      cflags: -O2 -g -march=haswell -ftree-vectorize
+      cxxflags: -O2 -g -march=haswell -ftree-vectorize
+      fflags: -O2 -g -march=haswell -ftree-vectorize
+    target_architecture:
+      platform: linux
+      os: centos7
+      arch: x86_64
+  - name: 'gcc'
+    version: 8.4.0
+    variants:
+      - '+piclibs'
+    dependencies:
+      - '%gcc@4.8.5'
+    flags:
+      cflags: -O2 -g -march=haswell -ftree-vectorize
+      cxxflags: -O2 -g -march=haswell -ftree-vectorize
+      fflags: -O2 -g -march=haswell -ftree-vectorize
+    target_architecture:
+      platform: linux
+      os: centos7
+      arch: x86_64
+packages:
+  - name: 'abinit'
+    version: '8.10.3'
+    variants:
+      - '+mpi'
+      - '+openmp'
+      - '+scalapack'
+  - name: 'cuda'
+    version: '10.1.243'
+  - name: 'cuda'
+    version: '11.0.2'
+  - name: 'julia'
+    version: '1.5.3'
+    extra_flags:
+      - '-j 1'
+  - name: 'llvm'
+    version: 11.0.1
+    extra_flags:
+      - '-j 4'
+  - name: 'llvm'
+    version: 11.0.1
+    variants:
+      - '+cuda'
+      - 'cuda_arch=35,60,70'
+    dependencies:
+      - '^cuda@10.1.243'
+    extra_flags:
+      - '-j 4'
+  - name: 'quantum-espresso'
+    version: '6.6'
+    variants:
+      - '+epw'
+      - 'hdf5=parallel'
+      - '+mpi'
+      - '+scalapack'
+  - name: 'hdf5'
+    version: 1.10.7
+    variants:
+      - '~mpi'
+  - name: 'gromacs'
+    version: '2020.4'
+    variants:
+      - '+blas'
+      - '+mpi'
+      - '+openmp'
+  - name: 'gsl'
+    version: '2.6'
+  - name: 'geant4'
+    version: '10.7.1'
+    variants:
+      - '+ipo'
+      - '+python'
