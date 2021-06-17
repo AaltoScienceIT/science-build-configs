@@ -66,6 +66,9 @@ environments:
     collections:
       - tensorflow-v2
       - triton-generic
+    extra_module_variables:
+      setenv:
+        GUROBI_HOME: '$prefix'
   - name: neuroimaging
     version: '2021-01'
     miniconda: True
