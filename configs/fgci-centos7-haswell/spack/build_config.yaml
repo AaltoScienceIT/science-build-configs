@@ -108,3 +108,5 @@ packages:
     version: '1.6.1'
     extra_flags:
       - '-j 1'
+  - name: 'nvhpc'
+    version: '21.5'
