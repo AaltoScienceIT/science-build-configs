@@ -110,3 +110,5 @@ packages:
       - '-j 1'
   - name: 'nvhpc'
     version: '21.5'
+  - name: 'openbabel'
+    version: '3.1.1'
