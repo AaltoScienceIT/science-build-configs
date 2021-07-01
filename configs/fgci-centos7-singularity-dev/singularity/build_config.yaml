@@ -131,3 +131,15 @@ definitions:
       - 'openface'
     flag_collections:
       - 'common'
+  - name: 'singularity-tensor-stream'
+    registry: 'ghcr.io'
+    docker_user: 'osai-ai'
+    docker_image: 'dokai'
+    module_namespace: 'common'
+    tags:
+      - '20.09-tensor-stream'
+    command_collections:
+      - 'common'
+    flag_collections:
+      - 'common'
+      - 'nvidia'
