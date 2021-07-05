@@ -160,6 +160,7 @@ collections:
       - importnb
       - iniconfig
       - ipdb
+      - ipympl    # jupyter + matplotlib interactive
       - jbig
       - joblib
       - jupyter
